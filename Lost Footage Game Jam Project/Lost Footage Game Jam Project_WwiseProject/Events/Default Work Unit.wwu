@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E3D4509B-5585-4484-A783-1404C7E07F85}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E3D4509B-5585-4484-A783-1404C7E07F85}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="TEST" ID="{6E65B00A-39E9-47FF-9EF3-AA9FEBCCEBBB}">
+					<ChildrenList>
+						<Action Name="" ID="{FC094DFE-B5BD-4C18-8143-95CFB5DB428C}" ShortID="417173565">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="E2_Inside_Layer_Adds_Base+Synth" ID="{164CDA99-0578-4E9B-8B55-F56490E8E2A1}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

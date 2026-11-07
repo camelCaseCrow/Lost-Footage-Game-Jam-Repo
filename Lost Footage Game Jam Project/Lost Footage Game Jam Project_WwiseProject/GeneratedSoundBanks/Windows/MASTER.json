@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4056684167",
+    "Type": "User",
+    "GUID": "{99151FC5-00E3-420F-988E-62F6A0111084}",
+    "Language": "SFX",
+    "Hash": "{E117F1AA-D006-CEA1-8AC1-F954314EEEC0}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MASTER",
+    "ShortName": "MASTER",
+    "Path": "MASTER.bnk",
+    "Media": [
+     {
+      "Id": "187078407",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "E2_Inside_Layer_Adds_Base+Synth.wav",
+      "CachePath": "DA/{DA8F6FDD-BD2C-35B5-FAC5-AF4D36E45ED4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3157003241",
+      "Name": "TEST",
+      "ObjectPath": "\\Events\\Default Work Unit\\TEST",
+      "GUID": "{6E65B00A-39E9-47FF-9EF3-AA9FEBCCEBBB}",
+      "DurationType": "OneShot",
+      "DurationMin": "39.272728",
+      "DurationMax": "39.272728",
+      "MediaRefs": [
+       {
+        "Id": "187078407"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3AFC9A36-D9FA-2045-5A09-AA20350342C8}"
+ }
+}
