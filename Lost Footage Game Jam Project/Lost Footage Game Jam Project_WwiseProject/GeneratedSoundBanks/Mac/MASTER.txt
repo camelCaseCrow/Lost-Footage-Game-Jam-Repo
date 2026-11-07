@@ -1,6 +1,3 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3157003241	TEST			\Default Work Unit\TEST	
 
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	187078407	E2_Inside_Layer_Adds_Base+Synth	Y:\Documents\GitHub\Lost-Footage-Game-Jam-Repo\Lost Footage Game Jam Project\Lost Footage Game Jam Project_WwiseProject\.cache\DA\{DA8F6FDD-BD2C-35B5-FAC5-AF4D36E45ED4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TEST\E2_Inside_Layer_Adds_Base+Synth		1192582
-
