@@ -1,4 +1,9 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	33300213	MX_Bus			\Default Work Unit\Master Audio Bus\MX_Bus	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SX _Bus\SFX	
+	648456911	SX _Bus			\Default Work Unit\Master Audio Bus\SX _Bus	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\SX _Bus\AMB	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\SX _Bus\UI	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

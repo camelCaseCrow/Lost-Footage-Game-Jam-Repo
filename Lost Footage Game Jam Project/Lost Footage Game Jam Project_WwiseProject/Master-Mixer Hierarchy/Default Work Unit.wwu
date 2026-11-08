@@ -9,6 +9,16 @@
 							<ObjectRef Name="System" ID="{000C0358-410C-45E2-A8B3-E3F2D591D88F}" WorkUnitID="{275674C5-0F92-4CE8-976D-448914C3E04B}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SX _Bus" ID="{752331BA-3C26-49CF-BF56-9FE7AA3D8E63}">
+							<ChildrenList>
+								<Bus Name="SFX" ID="{B5A0BBB6-0271-44DB-A2D4-4D7C8646D4CE}"/>
+								<Bus Name="UI" ID="{F43C25D7-E22E-4C2A-BC03-018263F4E311}"/>
+								<Bus Name="AMB" ID="{E847BF43-9974-4A39-ADDC-05678D194162}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="MX_Bus" ID="{4122C1C1-5E38-4F3B-9905-98D2E25D5CBE}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
