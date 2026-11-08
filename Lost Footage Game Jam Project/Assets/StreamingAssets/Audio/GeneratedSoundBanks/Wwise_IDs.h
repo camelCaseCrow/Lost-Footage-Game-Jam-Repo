@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ANGELCLUNK = 2748258315U;
         static const AkUniqueID ANGELSCRAPE = 3364115928U;
         static const AkUniqueID ANGELTURN = 541930357U;
         static const AkUniqueID DOORKNOCK = 287631195U;
@@ -35,6 +36,8 @@ namespace AK
         static const AkUniqueID PLAYMENUMUSIC = 413545259U;
         static const AkUniqueID PLAYMUSICSTINGERS = 2855001309U;
         static const AkUniqueID PLAYSELECT = 4273230119U;
+        static const AkUniqueID PLAYTEXT = 4273968882U;
+        static const AkUniqueID PLAYWHISPERS = 679634934U;
         static const AkUniqueID TAPEANGEL = 2695946112U;
         static const AkUniqueID TAPEMEASURE = 1986188383U;
     } // namespace EVENTS
@@ -54,6 +57,13 @@ namespace AK
         static const AkUniqueID SX__BUS = 648456911U;
         static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID AMB_VERB = 4154576717U;
+        static const AkUniqueID MX_VERB = 932042106U;
+        static const AkUniqueID SFX_VERB = 3518710954U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

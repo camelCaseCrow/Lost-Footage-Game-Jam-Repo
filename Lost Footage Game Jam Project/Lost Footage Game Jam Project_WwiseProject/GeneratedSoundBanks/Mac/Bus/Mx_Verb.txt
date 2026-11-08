@@ -1,0 +1,6 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	932042106	Mx_Verb			\Default Work Unit\Master Audio Bus\MX_Bus\Mx_Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1706684651	Plate_Medium	Wwise RoomVerb			
+

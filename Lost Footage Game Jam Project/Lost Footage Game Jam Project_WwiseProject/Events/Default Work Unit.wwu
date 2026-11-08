@@ -5,8 +5,34 @@
 			<ChildrenList>
 				<Folder Name="MUSIC" ID="{88EF858F-7769-484F-AD06-4A0D68BABA4C}" ShortID="782941001">
 					<ChildrenList>
-						<Event Name="playMenuMusic" ID="{CE295E88-C687-4E02-A7F0-F6EDD20A7963}"/>
-						<Event Name="playMainMusic" ID="{4D43261E-D119-4647-83BB-C846220B94F4}"/>
+						<Event Name="playMenuMusic" ID="{CE295E88-C687-4E02-A7F0-F6EDD20A7963}">
+							<ChildrenList>
+								<Action Name="" ID="{AB1A63A7-32FF-4ABC-88BC-2A93E5D9E6CB}" ShortID="303084907">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mx_menu" ID="{A3CFF7E9-9752-4CD9-B243-3F234B0E0B51}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playMainMusic" ID="{4D43261E-D119-4647-83BB-C846220B94F4}">
+							<ChildrenList>
+								<Action Name="" ID="{DD8B41F8-A6C6-4BE1-BF3F-0A030880735C}" ShortID="779135306">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mx_main" ID="{8F82F55F-12DA-46F8-93AB-F49640F0D392}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="playMusicStingers" ID="{50288114-B4C6-4E33-81ED-B1DE710F3E52}">
 							<ChildrenList>
 								<Action Name="" ID="{DA160B52-714A-4B07-A1AC-402B8E5F42D2}" ShortID="925016308">
@@ -215,6 +241,7 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Event Name="AngelClunk" ID="{21F08F14-F580-4D35-BE43-90243C19EC41}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="UI" ID="{671B58C3-8EAA-4347-A703-B12EBDBFF836}" ShortID="529688531">
@@ -252,6 +279,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="playText" ID="{C4690F1B-435F-4D97-8F03-510063D0EA34}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Ambience" ID="{D3FC7575-4922-46A2-902A-98F413C87C15}" ShortID="289152491">
@@ -278,8 +306,21 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{8DD56738-3331-40A6-ACA6-6742B5CBCF5F}" ShortID="584603658">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="mx_menu" ID="{A3CFF7E9-9752-4CD9-B243-3F234B0E0B51}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="playWhispers" ID="{19546513-0506-483E-ADA6-9FC484C99F51}"/>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

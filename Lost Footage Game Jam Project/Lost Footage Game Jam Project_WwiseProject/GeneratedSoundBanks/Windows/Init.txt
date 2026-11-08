@@ -6,6 +6,15 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1551306167	UI			\Default Work Unit\Master Audio Bus\SX _Bus\UI	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	932042106	Mx_Verb			\Default Work Unit\Master Audio Bus\MX_Bus\Mx_Verb	
+	3518710954	Sfx_Verb			\Default Work Unit\Master Audio Bus\SX _Bus\SFX\Sfx_Verb	
+	4154576717	Amb_Verb			\Default Work Unit\Master Audio Bus\SX _Bus\AMB\Amb_Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	484890516	Church_Small_Wood	Wwise RoomVerb			
+	1706684651	Plate_Medium	Wwise RoomVerb			
+
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
 	3859886410	System	System			

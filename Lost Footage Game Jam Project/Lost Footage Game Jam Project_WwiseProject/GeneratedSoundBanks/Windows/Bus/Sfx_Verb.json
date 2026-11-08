@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3518710954",
+    "Type": "Bus",
+    "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}",
+    "Language": "SFX",
+    "Hash": "{1F683982-091F-046B-0540-4C8DB1DEBFCC}",
+    "ObjectPath": "Sfx_Verb",
+    "ShortName": "Sfx_Verb",
+    "Path": "Bus/Sfx_Verb.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "484890516",
+       "Name": "Church_Small_Wood",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Cathedrals\\Church_Small_Wood",
+       "GUID": "{940CCB47-F031-4C6A-B0E6-726CAC418C02}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "3518710954",
+      "Name": "Sfx_Verb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+      "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "484890516"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7BB940F2-3FFC-0371-A7B2-CF679D62AC73}"
+ }
+}
