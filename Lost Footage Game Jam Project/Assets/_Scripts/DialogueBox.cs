@@ -21,6 +21,7 @@ public class DialogueBox : MonoBehaviour
     private bool asking;             // are Yes/No showing right now?
     private bool yesSelected;        // which one E will pick
     private Action onYes;            // the method to run after Yes
+    private Action onNo;             // the method to run after No; null means No just closes
 
     private void Awake()
     {
@@ -35,11 +36,13 @@ public class DialogueBox : MonoBehaviour
         Open(linesToShow, false);
     }
 
-    // Like Play, but the last line is a Yes/No question. whenYes runs after Yes; No just closes the box.
-    public void PlayThenAsk(string[] linesToShow, Action whenYes)
+    // Like Play, but the last line is a Yes/No question.
+    // whenYes runs after Yes. whenNo runs after No; null means No just closes the box.
+    public void PlayThenAsk(string[] linesToShow, Action whenYes, Action whenNo)
     {
         onFinished = null;
         onYes = whenYes;
+        onNo = whenNo;
         Open(linesToShow, true);
     }
 
@@ -133,7 +136,7 @@ public class DialogueBox : MonoBehaviour
         }
     }
 
-    // Closes the box, then runs onYes if Yes was picked.
+    // Closes the box, then runs onYes or onNo depending on the choice.
     private void Choose()
     {
         bool choseYes = yesSelected;
@@ -142,6 +145,10 @@ public class DialogueBox : MonoBehaviour
         if (choseYes)
         {
             onYes.Invoke();
+        }
+        else if (onNo != null)
+        {
+            onNo.Invoke();
         }
     }
 

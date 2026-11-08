@@ -4,24 +4,49 @@ using UnityEngine;
 public class LockedDoor : MonoBehaviour
 {
     [SerializeField] private DialogueBox dialogueBox;
-    [SerializeField, TextArea(2, 5)] private string[] lockedLines;   // when she tries the door
+    [SerializeField, TextArea(2, 5)] private string[] notYetLines;            // "(Can't leave yet.)" …
+    [SerializeField, TextArea(2, 5)] private string[] lockedLines;            // the locked scene
+    [SerializeField, TextArea(2, 5)] private string[] stillLockedLines;       // next try: "(It still won't FUCKING open.)" …
+    [SerializeField, TextArea(2, 5)] private string[] stillLockedAgainLines;  // every try after: "(And nope, it's still not opening.)"
+    [SerializeField] private AK.Wwise.Event tryOpenSound;   // she pulls the handle (not played for "Can't leave yet")
 
-    private bool active;          // true once GameFlow wants her to try the door
-    private Action onFinished;    // the method to run after the last line
+    // The door's phases, in story order.
+    private enum DoorState { NotYet, ReadyToTry, Tried, TriedTwice }
 
-    // Called by GameFlow. whenFinished runs after the locked-door lines.
+    private DoorState state = DoorState.NotYet;
+    private Action onFinished;    // runs after the locked scene
+
+    // Called by GameFlow once the floor is measured. whenFinished runs after the locked scene.
     public void Begin(Action whenFinished)
     {
         onFinished = whenFinished;
-        active = true;
+        state = DoorState.ReadyToTry;
     }
 
     // Wired to the door's Interactable Object > On Interact.
     public void TryOpen()
     {
-        if (!active) return;   // too early: nothing happens yet
+        if (state == DoorState.NotYet)
+        {
+            dialogueBox.Play(notYetLines, null);
+            return;
+        }
 
-        active = false;
-        dialogueBox.Play(lockedLines, onFinished);
+        tryOpenSound.Post(gameObject);   // every real attempt from here on
+
+        if (state == DoorState.ReadyToTry)
+        {
+            state = DoorState.Tried;
+            dialogueBox.Play(lockedLines, onFinished);
+        }
+        else if (state == DoorState.Tried)
+        {
+            state = DoorState.TriedTwice;
+            dialogueBox.Play(stillLockedLines, null);
+        }
+        else
+        {
+            dialogueBox.Play(stillLockedAgainLines, null);
+        }
     }
 }

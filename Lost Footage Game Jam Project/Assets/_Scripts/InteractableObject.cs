@@ -4,7 +4,8 @@ using UnityEngine.Events;
 public class InteractableObject : MonoBehaviour
 {
     // What happens when the player presses E nearby. Set it in the Inspector.
-    [SerializeField] private UnityEvent onInteract;
+    [SerializeField] private UnityEvent onInteract = new UnityEvent();
+    [SerializeField] private AK.Wwise.Event interactSound;   // plays on this object every time E is pressed here
 
     // Stops the game at Play if this object is set up wrong.
     private void Awake()
@@ -25,6 +26,7 @@ public class InteractableObject : MonoBehaviour
     // Called by PlayerInteract when the player presses E nearby.
     public void Interact()
     {
+        interactSound.Post(gameObject);
         onInteract.Invoke();
     }
 }
