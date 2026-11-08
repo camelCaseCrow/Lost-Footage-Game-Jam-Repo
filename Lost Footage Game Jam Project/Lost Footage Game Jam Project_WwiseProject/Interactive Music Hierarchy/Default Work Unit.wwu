@@ -303,6 +303,11 @@
 				<MusicSwitchContainer Name="mx_switch_main" ID="{02FCD340-5092-4AE9-AE31-BDF896582DF0}" ShortID="645617508">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="100"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -389,6 +394,55 @@
 													</MusicFade>
 												</DestinationFadeIn>
 											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{CC4E3669-EDDB-4C21-8810-93DF81FFBCE2}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="1"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+												<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="mx_mainTheme_Everything" ID="{E8BAD0C7-55E0-43C5-A97E-A77176C39AB8}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<JumpToPlaylistItemRef Name="" ID="{46503862-AB95-4A95-B835-3086501CACAE}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{B3D51F23-7D2D-46BE-9616-922695C32DFB}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{65A78F54-F190-4EB4-8836-8E4B9A4D7886}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{49580EB6-5AE5-44A4-BC09-B9D6E0ABD97D}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="mx_mainTheme_None" ID="{214B6672-8BB8-4DE3-8D3A-78A4791839C8}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="mx_mainTheme_Bass_Arp_Chime_Bell" ID="{56BEC5A9-C594-48FF-BB32-7E1EE4C330DE}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
@@ -901,6 +955,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="mx_mainTheme_layer_chime" ID="{B1B6078B-A017-49C5-9B82-22B0B0697D3B}" ShortID="366882158">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21627A39-E4C7-4EF8-963A-F873AD4439F8}"/>
@@ -1038,6 +1099,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="mx_mainTheme_layer_chimbell" ID="{C91D1A78-547C-44AB-B09C-9F83C9B95EBE}" ShortID="94110581">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21627A39-E4C7-4EF8-963A-F873AD4439F8}"/>
@@ -1203,6 +1271,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="mx_mainTheme_layer_chime" ID="{A708C276-78F3-457A-8822-BC66132B9096}" ShortID="463214122">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21627A39-E4C7-4EF8-963A-F873AD4439F8}"/>
@@ -1340,6 +1415,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="mx_mainTheme_layer_synthchord" ID="{83606CFC-3ADC-47A1-9ED0-92C87FC89497}" ShortID="364115334">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21627A39-E4C7-4EF8-963A-F873AD4439F8}"/>
@@ -1505,6 +1587,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="mx_mainTheme_layer_chimbell" ID="{1EA6447D-D739-451B-AF0A-B3E842C9C990}" ShortID="732082658">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21627A39-E4C7-4EF8-963A-F873AD4439F8}"/>
@@ -1560,6 +1649,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="mx_mainTheme_layer_chime" ID="{C426F368-BABA-492F-BBE4-64D3114C071D}" ShortID="2071043">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{21627A39-E4C7-4EF8-963A-F873AD4439F8}"/>
@@ -1785,7 +1881,7 @@
 								<Property Name="Tempo" Type="Real64" Value="100"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2494,6 +2590,11 @@
 				<MusicSegment Name="mx_chracter_interact_mosaicpiece" ID="{536CB5E9-6E7E-4CFD-A6CB-3E2CE110D082}" ShortID="898130847">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="100"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

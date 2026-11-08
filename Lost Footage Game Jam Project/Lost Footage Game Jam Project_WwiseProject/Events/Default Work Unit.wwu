@@ -16,146 +16,300 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="playMXStinger1" ID="{50288114-B4C6-4E33-81ED-B1DE710F3E52}">
+						<Folder Name="STINGERS" ID="{21078898-CE06-4892-8C48-4A402B0A2C69}" ShortID="159293586">
 							<ChildrenList>
-								<Action Name="" ID="{75C4B2C0-C8DE-4930-837B-0DCD581F5B0F}" ShortID="157392098">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="35"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PuzzComp1" ID="{9B4A755F-CEF0-4E48-87D3-A0CFC3A99491}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="playMXStinger1" ID="{50288114-B4C6-4E33-81ED-B1DE710F3E52}">
+									<ChildrenList>
+										<Action Name="" ID="{75C4B2C0-C8DE-4930-837B-0DCD581F5B0F}" ShortID="157392098">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuzzComp1" ID="{9B4A755F-CEF0-4E48-87D3-A0CFC3A99491}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{044487B9-8955-4B25-B71D-1C1F052D1FD4}" ShortID="930561576">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+												<Property Name="Delay" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bass_Arp_Chime" ID="{C7160AB7-08F1-47F4-9742-55C676C7C675}" WorkUnitID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{7C434E02-99D3-4874-9B83-23BC8BBB294E}" ShortID="690704678">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_glass_place" ID="{2AC83189-A6C9-4B0E-B73D-3630121DF8E7}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="playMXStinger2" ID="{9774F717-290E-4CC1-8936-2E880086EC0F}">
+									<ChildrenList>
+										<Action Name="" ID="{BBC6BAAB-2344-4507-9165-A5712440C3B7}" ShortID="914439796">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuzzComp2" ID="{46F80267-CFA4-482F-9C75-98ECCACEE838}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AE8D0F71-9CF2-4A8C-B645-ABE82B9EDC75}" ShortID="1034632653">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_glass_place" ID="{2AC83189-A6C9-4B0E-B73D-3630121DF8E7}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EBDCD253-1EB8-41A7-B55A-01D5762FC66E}" ShortID="607689294">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bass_Arp_Chime_Bell" ID="{61CA71F4-3AA2-4794-B412-373E5E80DC27}" WorkUnitID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{483564C5-6649-4822-B33D-7D7A816E5DAA}" ShortID="367747163">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_amb_whispers" ID="{6E19724B-5CF3-4D41-AFCE-B2A3B2482576}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="playMXStinger3" ID="{83D3B0FF-1805-4AA0-B049-B70861C07367}">
+									<ChildrenList>
+										<Action Name="" ID="{BC00AC14-8852-4DDE-874A-9A6D8C4EC617}" ShortID="121192927">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuzzComp3" ID="{A26BBB0A-1706-4FC2-84F5-A5EC262AD669}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{B1501B2B-5E64-4050-AF8A-D5BE96E2C4AC}" ShortID="123243875">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_glass_place" ID="{2AC83189-A6C9-4B0E-B73D-3630121DF8E7}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="playMXStinger4" ID="{46832306-28C6-4D68-8C11-C1533B4C6136}">
+									<ChildrenList>
+										<Action Name="" ID="{EBD1F287-BFB9-4A25-AD74-0F5DB7AD1285}" ShortID="369167373">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+												<Property Name="Delay" Type="Real64" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuzzComp4" ID="{505944CD-2A4A-434D-8EF4-B900D46294E4}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F11951CE-F2DD-449A-ADF1-7576CD549C9D}" ShortID="689503132">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="35"/>
+												<Property Name="Delay" Type="Real64" Value="4"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuzzCompExtra" ID="{09802B61-BF10-4383-B8FC-703DC033C747}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{4351095A-FE04-4C9B-98B3-90D6987FF861}" ShortID="504469485">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_glass_place" ID="{2AC83189-A6C9-4B0E-B73D-3630121DF8E7}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EDB3F7E0-47D6-4CE9-B445-6F815C8F1C42}" ShortID="241557952">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+												<Property Name="Delay" Type="Real64" Value="4"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="mx_switch_main" ID="{02FCD340-5092-4AE9-AE31-BDF896582DF0}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8E8EC6A4-B7AA-4BA6-808A-F3E598EB7DA5}" ShortID="138466650">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+												<Property Name="Delay" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="None" ID="{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}" WorkUnitID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="playMXStinger5" ID="{FB8F3FF0-9238-461B-ABA4-29650712444F}">
+									<ChildrenList>
+										<Action Name="" ID="{B6B6A424-B393-46FE-93E8-9D702F72ED39}" ShortID="396910485">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="mx_chracter_interact_mosaicpiece" ID="{536CB5E9-6E7E-4CFD-A6CB-3E2CE110D082}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="RESET_MX" ID="{535F91F6-9220-412A-9494-2E53B0DDB300}">
+									<ChildrenList>
+										<Action Name="" ID="{41B9489B-7D19-44A2-A745-0FF0F247E772}" ShortID="267495079">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="mx_switch_main" ID="{02FCD340-5092-4AE9-AE31-BDF896582DF0}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="INTRO_FIRST_STATE" ID="{3F1C99B0-3515-4349-A3BD-84ED7329C7C5}">
+									<ChildrenList>
+										<Action Name="" ID="{42D19981-EEED-46D7-887E-EE2E48A488F4}" ShortID="994424139">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bass_Arp" ID="{90361738-4026-4AE2-B705-904FBE756F7D}" WorkUnitID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="END_ANIMATION_CREDITS" ID="{C28893AB-5DBA-441B-8D59-2623FB9185FB}">
+									<ChildrenList>
+										<Action Name="" ID="{F2EEB75A-046C-4247-8549-309E4D2DF725}" ShortID="499661429">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Everything" ID="{6CB6E74D-8647-497F-ACDC-A8D560F9B5AA}" WorkUnitID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{504144A6-D1D5-4A49-96BE-12578559FB91}" ShortID="842223611">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="mx_switch_main" ID="{02FCD340-5092-4AE9-AE31-BDF896582DF0}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{53189E80-354C-43FF-99FC-C9606511E3BD}" ShortID="663395178">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_amb_spot" ID="{2BCF78FC-4EDF-4A59-BDEA-1E621EE7D520}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{5F974C49-1AAA-40FD-88E3-AAA2F54C47A6}" ShortID="801912433">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_amb_wind_loop" ID="{8E1B084E-8A8E-4CC8-8121-41CCA9E4E50E}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D1B7FD9C-ABDF-4FE4-9D14-6D52BC485456}" ShortID="361755311">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Delay" Type="Real64" Value="30"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="mx_switch_main" ID="{02FCD340-5092-4AE9-AE31-BDF896582DF0}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ANGEL_APPROACH" ID="{DF4367C1-963D-461E-9C16-5E46EF64FDAE}">
+									<ChildrenList>
+										<Action Name="" ID="{44202486-9BC8-4E6C-A45A-D82A5382C705}" ShortID="849193312">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="None" ID="{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}" WorkUnitID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{AD66BADA-EEDF-441F-9CF4-32F6B7A04D49}" ShortID="822160119">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_amb_whispers" ID="{6E19724B-5CF3-4D41-AFCE-B2A3B2482576}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="playCredits" ID="{315494A8-7AFE-4146-B864-7258D2F209E6}">
-							<ChildrenList>
-								<Action Name="" ID="{6E900961-9E5D-4224-955F-3EC7BB49A543}" ShortID="975760452">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="mx_menu" ID="{A3CFF7E9-9752-4CD9-B243-3F234B0E0B51}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="playMXStinger2" ID="{9774F717-290E-4CC1-8936-2E880086EC0F}">
-							<ChildrenList>
-								<Action Name="" ID="{BBC6BAAB-2344-4507-9165-A5712440C3B7}" ShortID="914439796">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="35"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PuzzComp2" ID="{46F80267-CFA4-482F-9C75-98ECCACEE838}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="playMXStinger3" ID="{83D3B0FF-1805-4AA0-B049-B70861C07367}">
-							<ChildrenList>
-								<Action Name="" ID="{BC00AC14-8852-4DDE-874A-9A6D8C4EC617}" ShortID="121192927">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="35"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PuzzComp3" ID="{A26BBB0A-1706-4FC2-84F5-A5EC262AD669}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="playMXStinger4" ID="{46832306-28C6-4D68-8C11-C1533B4C6136}">
-							<ChildrenList>
-								<Action Name="" ID="{EBD1F287-BFB9-4A25-AD74-0F5DB7AD1285}" ShortID="369167373">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="35"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PuzzComp4" ID="{505944CD-2A4A-434D-8EF4-B900D46294E4}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{F11951CE-F2DD-449A-ADF1-7576CD549C9D}" ShortID="689503132">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="35"/>
-										<Property Name="Delay" Type="Real64" Value="2"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="PuzzCompExtra" ID="{09802B61-BF10-4383-B8FC-703DC033C747}" WorkUnitID="{DE7281FE-42CF-440E-BFC6-0B6D4B27C365}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="playMXStinger5" ID="{FB8F3FF0-9238-461B-ABA4-29650712444F}">
-							<ChildrenList>
-								<Action Name="" ID="{B6B6A424-B393-46FE-93E8-9D702F72ED39}" ShortID="396910485">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="mx_chracter_interact_mosaicpiece" ID="{536CB5E9-6E7E-4CFD-A6CB-3E2CE110D082}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{343C2BC7-92C7-4DD3-AFCE-EBB7F65E8C8E}" ShortID="123501500">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="12"/>
-										<Property Name="FadeTime" Type="Real64" Value="2"/>
-										<Property Name="Volume" Type="Real64" Value="-65"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="mx_switch_main" ID="{02FCD340-5092-4AE9-AE31-BDF896582DF0}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="RESET_MX" ID="{535F91F6-9220-412A-9494-2E53B0DDB300}">
-							<ChildrenList>
-								<Action Name="" ID="{41B9489B-7D19-44A2-A745-0FF0F247E772}" ShortID="267495079">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="12"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="mx_switch_main" ID="{02FCD340-5092-4AE9-AE31-BDF896582DF0}" WorkUnitID="{4C2B7BEB-D1AF-4BEA-9E31-E78A7DCE73FD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{9A7CC948-C2C6-44AE-B47C-732E6B0EACC4}" ShortID="678496802">
 					<ChildrenList>
 						<Folder Name="MainSFX" ID="{765A909D-A790-4F7E-8DF3-5B39C942A06A}" ShortID="752971940">
 							<ChildrenList>
-								<Event Name="AngelTurn" ID="{AD720B3F-4521-4399-B6B7-CA7FE9A2910A}">
-									<ChildrenList>
-										<Action Name="" ID="{8D725D8E-E897-47DE-937A-EA46F571035F}" ShortID="596040521">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sx_angel_turn" ID="{181425E0-C486-40D4-80E6-9A7828C7F6A5}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="AngelScrape" ID="{E9256BB1-8CC1-4E3E-B00F-7996C7BBEF84}">
 									<ChildrenList>
 										<Action Name="" ID="{C873291F-511E-4F49-836B-5BFD390DED56}" ShortID="888581662">
@@ -200,23 +354,22 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="DoorKnock" ID="{1AA814D7-FC68-4F02-BD5D-0C9E02835AE6}">
-									<ChildrenList>
-										<Action Name="" ID="{123A20E2-E08A-4249-B65A-C52848CB388C}" ShortID="19062593">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sx_door_knock" ID="{96518ABB-5EFB-4E73-916B-8243EEB7E73B}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="DoorLock" ID="{280B16AF-0509-458F-973F-2E2BF3E1FB2A}">
 									<ChildrenList>
 										<Action Name="" ID="{F9750192-AA9C-4723-A174-F57AAD3C42D6}" ShortID="1040447912">
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="sx_door_locked" ID="{B0B709C1-88C7-4E0B-8003-9C5DCD8119F6}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{71BAFB69-0F95-44F5-8954-15B4ACFB3F52}" ShortID="425886057">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="2.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_door_knock" ID="{96518ABB-5EFB-4E73-916B-8243EEB7E73B}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -244,7 +397,6 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="AngelClunk" ID="{21F08F14-F580-4D35-BE43-90243C19EC41}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="UI" ID="{671B58C3-8EAA-4347-A703-B12EBDBFF836}" ShortID="529688531">
@@ -311,28 +463,9 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="playText" ID="{C4690F1B-435F-4D97-8F03-510063D0EA34}">
-									<ChildrenList>
-										<Action Name="" ID="{5092067F-EE0B-46EB-A6FD-9CBB264004B1}" ShortID="732056586">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sx_ui_select" ID="{9AAB4B64-EAA5-4F96-88D8-5ED93DD3DAB5}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Ambience" ID="{D3FC7575-4922-46A2-902A-98F413C87C15}" ShortID="289152491">
-							<ChildrenList>
-								<Event Name="playAmbience" ID="{DB0461BB-6BE7-41AC-9022-15E631DDC8A4}">
-									<ChildrenList>
-										<Action Name="" ID="{0933E702-F0C4-49FE-8E4C-89F9C85B7859}" ShortID="708188873">
+										<Action Name="" ID="{A35F9DD3-807D-4D7C-A8D8-2DE60C85CBCA}" ShortID="1003421165">
 											<PropertyList>
-												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -340,9 +473,9 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{19B3BF37-9919-4734-8D23-60732F279933}" ShortID="670854274">
+										<Action Name="" ID="{E39D80E3-60E8-4B0A-89F4-9ADBFC4B4589}" ShortID="313051480">
 											<PropertyList>
-												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -352,12 +485,12 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="playWhispers" ID="{19546513-0506-483E-ADA6-9FC484C99F51}">
+								<Event Name="playText" ID="{C4690F1B-435F-4D97-8F03-510063D0EA34}">
 									<ChildrenList>
-										<Action Name="" ID="{392A1A0B-E624-4EB0-BB07-33CDE8878451}" ShortID="239442497">
+										<Action Name="" ID="{5092067F-EE0B-46EB-A6FD-9CBB264004B1}" ShortID="732056586">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sx_amb_whispers" ID="{6E19724B-5CF3-4D41-AFCE-B2A3B2482576}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+													<ObjectRef Name="sx_ui_select" ID="{9AAB4B64-EAA5-4F96-88D8-5ED93DD3DAB5}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

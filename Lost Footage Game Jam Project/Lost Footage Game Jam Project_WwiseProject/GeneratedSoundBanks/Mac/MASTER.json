@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{99151FC5-00E3-420F-988E-62F6A0111084}",
     "Language": "SFX",
-    "Hash": "{E4BD456A-B583-B8B4-88A6-76B94A1C0D36}",
+    "Hash": "{A5A865EE-A6FF-4D42-31BA-8A14F87D0ADA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MASTER",
     "ShortName": "MASTER",
     "Path": "MASTER.bnk",
@@ -408,14 +408,6 @@
       "CachePath": "8E/{8E888B85-1530-C8FD-C621-3F34A31BE64C}.wem"
      },
      {
-      "Id": "800775824",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_angel_turn.wav",
-      "CachePath": "FF/{FFC95925-5B4C-A10D-5382-40509E8F9D48}.wem"
-     },
-     {
       "Id": "811566406",
       "Language": "SFX",
       "Streaming": "false",
@@ -578,14 +570,36 @@
     ],
     "Events": [
      {
-      "Id": "2748258315",
-      "Name": "AngelClunk",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\AngelClunk",
-      "GUID": "{21F08F14-F580-4D35-BE43-90243C19EC41}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "Id": "635203771",
+      "Name": "ANGEL_APPROACH",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\ANGEL_APPROACH",
+      "GUID": "{DF4367C1-963D-461E-9C16-5E46EF64FDAE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "917521495"
+       },
+       {
+        "Id": "1064049690"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "4154576717",
+        "Name": "Amb_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\AMB\\Amb_Verb",
+        "GUID": "{5A41F921-A604-465E-87C6-AFB78EFD7350}"
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "584727657",
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\None",
+        "GUID": "{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}"
+       }
+      ]
      },
      {
       "Id": "3364115928",
@@ -610,58 +624,17 @@
       ]
      },
      {
-      "Id": "541930357",
-      "Name": "AngelTurn",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\AngelTurn",
-      "GUID": "{AD720B3F-4521-4399-B6B7-CA7FE9A2910A}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.0064167",
-      "DurationMax": "1.0064167",
-      "MediaRefs": [
-       {
-        "Id": "800775824"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "287631195",
-      "Name": "DoorKnock",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\DoorKnock",
-      "GUID": "{1AA814D7-FC68-4F02-BD5D-0C9E02835AE6}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.9499583",
-      "DurationMax": "1.9499583",
-      "MediaRefs": [
-       {
-        "Id": "404350391"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
       "Id": "2536181312",
       "Name": "DoorLock",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\DoorLock",
       "GUID": "{280B16AF-0509-458F-973F-2E2BF3E1FB2A}",
       "DurationType": "OneShot",
-      "DurationMin": "1.1667292",
-      "DurationMax": "1.1667292",
+      "DurationMin": "4.4499583",
+      "DurationMax": "4.4499583",
       "MediaRefs": [
+       {
+        "Id": "404350391"
+       },
        {
         "Id": "445714166"
        }
@@ -672,6 +645,25 @@
         "Name": "Sfx_Verb",
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
         "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
+      ]
+     },
+     {
+      "Id": "12330532",
+      "Name": "END_ANIMATION_CREDITS",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\END_ANIMATION_CREDITS",
+      "GUID": "{C28893AB-5DBA-441B-8D59-2623FB9185FB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "584727657",
+        "Id": "972902454",
+        "Name": "Everything",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Everything",
+        "GUID": "{6CB6E74D-8647-497F-ACDC-A8D560F9B5AA}"
        }
       ]
      },
@@ -738,6 +730,25 @@
       ]
      },
      {
+      "Id": "3108700264",
+      "Name": "INTRO_FIRST_STATE",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\INTRO_FIRST_STATE",
+      "GUID": "{3F1C99B0-3515-4349-A3BD-84ED7329C7C5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "584727657",
+        "Id": "2798139058",
+        "Name": "Bass_Arp",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp",
+        "GUID": "{90361738-4026-4AE2-B705-904FBE756F7D}"
+       }
+      ]
+     },
+     {
       "Id": "1037731248",
       "Name": "OrganStop",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganStop",
@@ -769,10 +780,10 @@
       ]
      },
      {
-      "Id": "1765704519",
-      "Name": "playAmbience",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Ambience\\playAmbience",
-      "GUID": "{DB0461BB-6BE7-41AC-9022-15E631DDC8A4}",
+      "Id": "1853194852",
+      "Name": "playContinue",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playContinue",
+      "GUID": "{2B89D2B9-B303-42FA-9956-B7752EF97525}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -800,16 +811,25 @@
         "Id": "121928158"
        },
        {
+        "Id": "161845992"
+       },
+       {
         "Id": "187182820"
        },
        {
         "Id": "244813753"
        },
        {
+        "Id": "267662661"
+       },
+       {
         "Id": "289382967"
        },
        {
         "Id": "298111460"
+       },
+       {
+        "Id": "325336943"
        },
        {
         "Id": "338150113"
@@ -819,6 +839,9 @@
        },
        {
         "Id": "394600211"
+       },
+       {
+        "Id": "415559019"
        },
        {
         "Id": "449189214"
@@ -860,6 +883,9 @@
         "Id": "858529055"
        },
        {
+        "Id": "876204604"
+       },
+       {
         "Id": "904331536"
        },
        {
@@ -879,38 +905,6 @@
        },
        {
         "Id": "1039221686"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "4154576717",
-        "Name": "Amb_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\AMB\\Amb_Verb",
-        "GUID": "{5A41F921-A604-465E-87C6-AFB78EFD7350}"
-       }
-      ]
-     },
-     {
-      "Id": "1853194852",
-      "Name": "playContinue",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playContinue",
-      "GUID": "{2B89D2B9-B303-42FA-9956-B7752EF97525}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "161845992"
-       },
-       {
-        "Id": "267662661"
-       },
-       {
-        "Id": "325336943"
-       },
-       {
-        "Id": "415559019"
-       },
-       {
-        "Id": "876204604"
        },
        {
         "Id": "1054300476"
@@ -922,6 +916,12 @@
         "Name": "Mx_Verb",
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MX_Bus\\Mx_Verb",
         "GUID": "{77EE4C89-2E77-41B4-9362-68ED6B3CBBAB}"
+       },
+       {
+        "Id": "4154576717",
+        "Name": "Amb_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\AMB\\Amb_Verb",
+        "GUID": "{5A41F921-A604-465E-87C6-AFB78EFD7350}"
        }
       ],
       "SwitchContainers": [
@@ -1045,29 +1045,6 @@
       ]
      },
      {
-      "Id": "2250688815",
-      "Name": "playCredits",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playCredits",
-      "GUID": "{315494A8-7AFE-4146-B864-7258D2F209E6}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "118062420"
-       },
-       {
-        "Id": "811566406"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "932042106",
-        "Name": "Mx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MX_Bus\\Mx_Verb",
-        "GUID": "{77EE4C89-2E77-41B4-9362-68ED6B3CBBAB}"
-       }
-      ]
-     },
-     {
       "Id": "413545259",
       "Name": "playMenuMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMenuMusic",
@@ -1093,12 +1070,42 @@
      {
       "Id": "3691268467",
       "Name": "playMXStinger1",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger1",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\playMXStinger1",
       "GUID": "{50288114-B4C6-4E33-81ED-B1DE710F3E52}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.5535",
+      "DurationMax": "0.6039583",
+      "MediaRefs": [
+       {
+        "Id": "224951204"
+       },
+       {
+        "Id": "262839702"
+       },
+       {
+        "Id": "340371194"
+       },
+       {
+        "Id": "686262234"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "584727657",
+        "Id": "3348164903",
+        "Name": "Bass_Arp_Chime",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp_Chime",
+        "GUID": "{C7160AB7-08F1-47F4-9742-55C676C7C675}"
+       }
+      ],
       "ActionTrigger": [
        {
         "Id": "1425593178",
@@ -1111,12 +1118,42 @@
      {
       "Id": "3691268464",
       "Name": "playMXStinger2",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger2",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\playMXStinger2",
       "GUID": "{9774F717-290E-4CC1-8936-2E880086EC0F}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.5535",
+      "DurationMax": "0.6039583",
+      "MediaRefs": [
+       {
+        "Id": "224951204"
+       },
+       {
+        "Id": "262839702"
+       },
+       {
+        "Id": "340371194"
+       },
+       {
+        "Id": "686262234"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "584727657",
+        "Id": "3629177121",
+        "Name": "Bass_Arp_Chime_Bell",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp_Chime_Bell",
+        "GUID": "{61CA71F4-3AA2-4794-B412-373E5E80DC27}"
+       }
+      ],
       "ActionTrigger": [
        {
         "Id": "1425593177",
@@ -1129,12 +1166,33 @@
      {
       "Id": "3691268465",
       "Name": "playMXStinger3",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger3",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\playMXStinger3",
       "GUID": "{83D3B0FF-1805-4AA0-B049-B70861C07367}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.5535",
+      "DurationMax": "0.6039583",
+      "MediaRefs": [
+       {
+        "Id": "224951204"
+       },
+       {
+        "Id": "262839702"
+       },
+       {
+        "Id": "340371194"
+       },
+       {
+        "Id": "686262234"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
+      ],
       "ActionTrigger": [
        {
         "Id": "1425593176",
@@ -1147,12 +1205,42 @@
      {
       "Id": "3691268470",
       "Name": "playMXStinger4",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger4",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\playMXStinger4",
       "GUID": "{46832306-28C6-4D68-8C11-C1533B4C6136}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.5535",
+      "DurationMax": "0.6039583",
+      "MediaRefs": [
+       {
+        "Id": "224951204"
+       },
+       {
+        "Id": "262839702"
+       },
+       {
+        "Id": "340371194"
+       },
+       {
+        "Id": "686262234"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "584727657",
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\None",
+        "GUID": "{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}"
+       }
+      ],
       "ActionTrigger": [
        {
         "Id": "158866781",
@@ -1171,11 +1259,11 @@
      {
       "Id": "3691268471",
       "Name": "playMXStinger5",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger5",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\playMXStinger5",
       "GUID": "{FB8F3FF0-9238-461B-ABA4-29650712444F}",
       "DurationType": "OneShot",
-      "DurationMin": "4.4",
-      "DurationMax": "4.4",
+      "DurationMin": "2.4",
+      "DurationMax": "2.4",
       "MediaRefs": [
        {
         "Id": "353184114"
@@ -1219,32 +1307,9 @@
       ]
      },
      {
-      "Id": "679634934",
-      "Name": "playWhispers",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Ambience\\playWhispers",
-      "GUID": "{19546513-0506-483E-ADA6-9FC484C99F51}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "917521495"
-       },
-       {
-        "Id": "1064049690"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "4154576717",
-        "Name": "Amb_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\AMB\\Amb_Verb",
-        "GUID": "{5A41F921-A604-465E-87C6-AFB78EFD7350}"
-       }
-      ]
-     },
-     {
       "Id": "1822020242",
       "Name": "RESET_MX",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\RESET_MX",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\STINGERS\\RESET_MX",
       "GUID": "{535F91F6-9220-412A-9494-2E53B0DDB300}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -1376,6 +1441,6 @@
     ]
    }
   ],
-  "FileHash": "{0F3412DD-0D6C-2A26-EA0B-3DE34D92EDD0}"
+  "FileHash": "{324CFADA-03AA-2888-062D-910E7120233A}"
  }
 }

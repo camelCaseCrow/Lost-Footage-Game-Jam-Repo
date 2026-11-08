@@ -1,25 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
-	287631195	DoorKnock			\Default Work Unit\SFX\MainSFX\DoorKnock	
+	12330532	END_ANIMATION_CREDITS			\Default Work Unit\MUSIC\STINGERS\END_ANIMATION_CREDITS	
 	413545259	playMenuMusic			\Default Work Unit\MUSIC\playMenuMusic	
-	541930357	AngelTurn			\Default Work Unit\SFX\MainSFX\AngelTurn	
-	679634934	playWhispers			\Default Work Unit\SFX\Ambience\playWhispers	
+	635203771	ANGEL_APPROACH			\Default Work Unit\MUSIC\STINGERS\ANGEL_APPROACH	
 	1037731248	OrganStop			\Default Work Unit\SFX\MainSFX\OrganStop	
 	1071017484	GlassPlace			\Default Work Unit\SFX\MainSFX\GlassPlace	
-	1765704519	playAmbience			\Default Work Unit\SFX\Ambience\playAmbience	
-	1822020242	RESET_MX			\Default Work Unit\MUSIC\RESET_MX	
+	1822020242	RESET_MX			\Default Work Unit\MUSIC\STINGERS\RESET_MX	
 	1853194852	playContinue			\Default Work Unit\SFX\UI\playContinue	
 	1986188383	TapeMeasure			\Default Work Unit\SFX\MainSFX\TapeMeasure	
-	2250688815	playCredits			\Default Work Unit\MUSIC\playCredits	
 	2338763341	playStart			\Default Work Unit\SFX\UI\playStart	
 	2536181312	DoorLock			\Default Work Unit\SFX\MainSFX\DoorLock	
 	2695946112	TapeAngel			\Default Work Unit\SFX\MainSFX\TapeAngel	
-	2748258315	AngelClunk			\Default Work Unit\SFX\MainSFX\AngelClunk	
+	3108700264	INTRO_FIRST_STATE			\Default Work Unit\MUSIC\STINGERS\INTRO_FIRST_STATE	
 	3364115928	AngelScrape			\Default Work Unit\SFX\MainSFX\AngelScrape	
-	3691268464	playMXStinger2			\Default Work Unit\MUSIC\playMXStinger2	
-	3691268465	playMXStinger3			\Default Work Unit\MUSIC\playMXStinger3	
-	3691268467	playMXStinger1			\Default Work Unit\MUSIC\playMXStinger1	
-	3691268470	playMXStinger4			\Default Work Unit\MUSIC\playMXStinger4	
-	3691268471	playMXStinger5			\Default Work Unit\MUSIC\playMXStinger5	
+	3691268464	playMXStinger2			\Default Work Unit\MUSIC\STINGERS\playMXStinger2	
+	3691268465	playMXStinger3			\Default Work Unit\MUSIC\STINGERS\playMXStinger3	
+	3691268467	playMXStinger1			\Default Work Unit\MUSIC\STINGERS\playMXStinger1	
+	3691268470	playMXStinger4			\Default Work Unit\MUSIC\STINGERS\playMXStinger4	
+	3691268471	playMXStinger5			\Default Work Unit\MUSIC\STINGERS\playMXStinger5	
 	3845124483	GlassCollect			\Default Work Unit\SFX\MainSFX\GlassCollect	
 	4273968882	playText			\Default Work Unit\SFX\UI\playText	
 
@@ -91,7 +88,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	781970988	sx_ui_select	Y:\Documents\GitHub\Lost-Footage-Game-Jam-Repo\Lost Footage Game Jam Project\Lost Footage Game Jam Project_WwiseProject\.cache\07\{073FBB29-002D-598A-0A15-08762D2FC569}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SX\sx_ui\sx_ui_select		18103
 	785557996	sx_amb_spot_creaks_9	Y:\Documents\GitHub\Lost-Footage-Game-Jam-Repo\Lost Footage Game Jam Project\Lost Footage Game Jam Project_WwiseProject\.cache\17\{1726BD32-417C-C0B9-9E2E-6800F4DEA40A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SX\sx_amb\sx_amb_spot\sx_amb_spot_creaks\sx_amb_spot_creaks_9		23791
 	789887302	sx_amb_spot_whispers_1	Y:\Documents\GitHub\Lost-Footage-Game-Jam-Repo\Lost Footage Game Jam Project\Lost Footage Game Jam Project_WwiseProject\.cache\8E\{8E888B85-1530-C8FD-C621-3F34A31BE64C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SX\sx_amb\sx_amb_spot\sx_amb_spot_whispers\sx_amb_spot_whispers_1		68551
-	800775824	sx_angel_turn	Y:\Documents\GitHub\Lost-Footage-Game-Jam-Repo\Lost Footage Game Jam Project\Lost Footage Game Jam Project_WwiseProject\.cache\FF\{FFC95925-5B4C-A10D-5382-40509E8F9D48}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SX\sx_main\sx_angel\sx_angel_turn		11008
 	811566406	mx_intro_layer_synthchord	Y:\Documents\GitHub\Lost-Footage-Game-Jam-Repo\Lost Footage Game Jam Project\Lost Footage Game Jam Project_WwiseProject\.cache\C6\{C60AA75A-83C2-FCCF-619A-36B9212350C8}.wem		\Interactive Music Hierarchy\Default Work Unit\mx_menu\mx_menu_synth_only\mx_intro_layer_synthchord		377147
 	812313114	sx_amb_spot_whispers_7	Y:\Documents\GitHub\Lost-Footage-Game-Jam-Repo\Lost Footage Game Jam Project\Lost Footage Game Jam Project_WwiseProject\.cache\07\{07973748-A3AA-531A-66BE-D118D637AD40}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SX\sx_amb\sx_amb_spot\sx_amb_spot_whispers\sx_amb_spot_whispers_7		12848
 	849038832	sx_amb_spot_whispers_5	Y:\Documents\GitHub\Lost-Footage-Game-Jam-Repo\Lost Footage Game Jam Project\Lost Footage Game Jam Project_WwiseProject\.cache\67\{67E6E3B5-7ACC-109E-2DAB-DF2EC2CCFD83}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SX\sx_amb\sx_amb_spot\sx_amb_spot_whispers\sx_amb_spot_whispers_5		27915

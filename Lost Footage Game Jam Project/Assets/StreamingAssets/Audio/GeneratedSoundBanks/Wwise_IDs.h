@@ -13,17 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID ANGELCLUNK = 2748258315U;
+        static const AkUniqueID ANGEL_APPROACH = 635203771U;
         static const AkUniqueID ANGELSCRAPE = 3364115928U;
-        static const AkUniqueID ANGELTURN = 541930357U;
-        static const AkUniqueID DOORKNOCK = 287631195U;
         static const AkUniqueID DOORLOCK = 2536181312U;
+        static const AkUniqueID END_ANIMATION_CREDITS = 12330532U;
         static const AkUniqueID GLASSCOLLECT = 3845124483U;
         static const AkUniqueID GLASSPLACE = 1071017484U;
+        static const AkUniqueID INTRO_FIRST_STATE = 3108700264U;
         static const AkUniqueID ORGANSTOP = 1037731248U;
-        static const AkUniqueID PLAYAMBIENCE = 1765704519U;
         static const AkUniqueID PLAYCONTINUE = 1853194852U;
-        static const AkUniqueID PLAYCREDITS = 2250688815U;
         static const AkUniqueID PLAYMENUMUSIC = 413545259U;
         static const AkUniqueID PLAYMXSTINGER1 = 3691268467U;
         static const AkUniqueID PLAYMXSTINGER2 = 3691268464U;
@@ -32,7 +30,6 @@ namespace AK
         static const AkUniqueID PLAYMXSTINGER5 = 3691268471U;
         static const AkUniqueID PLAYSTART = 2338763341U;
         static const AkUniqueID PLAYTEXT = 4273968882U;
-        static const AkUniqueID PLAYWHISPERS = 679634934U;
         static const AkUniqueID RESET_MX = 1822020242U;
         static const AkUniqueID TAPEANGEL = 2695946112U;
         static const AkUniqueID TAPEMEASURE = 1986188383U;

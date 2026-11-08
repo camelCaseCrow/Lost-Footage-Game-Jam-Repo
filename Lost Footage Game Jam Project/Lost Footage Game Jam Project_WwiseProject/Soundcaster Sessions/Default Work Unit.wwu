@@ -6,36 +6,76 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{4677DA80-CDA8-4203-A12E-E28C24110061}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="playAmbience" ID="{DB0461BB-6BE7-41AC-9022-15E631DDC8A4}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<ObjectRef Name="playMenuMusic" ID="{CE295E88-C687-4E02-A7F0-F6EDD20A7963}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="playContinue" ID="{2B89D2B9-B303-42FA-9956-B7752EF97525}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<ObjectRef Name="playStart" ID="{B11DE135-31C6-4815-A0AA-089A6D4F6FB6}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="playContinue" ID="{2B89D2B9-B303-42FA-9956-B7752EF97525}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="INTRO_FIRST_STATE" ID="{3F1C99B0-3515-4349-A3BD-84ED7329C7C5}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="TapeMeasure" ID="{5555B555-792E-45BE-AC2A-F28A4ECFC91F}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="playMXStinger1" ID="{50288114-B4C6-4E33-81ED-B1DE710F3E52}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="DoorLock" ID="{280B16AF-0509-458F-973F-2E2BF3E1FB2A}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="playMXStinger2" ID="{9774F717-290E-4CC1-8936-2E880086EC0F}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<ObjectRef Name="ANGEL_APPROACH" ID="{DF4367C1-963D-461E-9C16-5E46EF64FDAE}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="playMXStinger3" ID="{83D3B0FF-1805-4AA0-B049-B70861C07367}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<ObjectRef Name="TapeAngel" ID="{7E17D769-29BB-4110-A734-0AE55E15FC90}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="playMXStinger4" ID="{46832306-28C6-4D68-8C11-C1533B4C6136}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<ObjectRef Name="AngelScrape" ID="{E9256BB1-8CC1-4E3E-B00F-7996C7BBEF84}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="playMXStinger5" ID="{FB8F3FF0-9238-461B-ABA4-29650712444F}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<ObjectRef Name="playMXStinger2" ID="{9774F717-290E-4CC1-8936-2E880086EC0F}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OrganStop" ID="{0E28909F-D9B9-4251-83DD-9E1EA6D46F9A}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playMXStinger3" ID="{83D3B0FF-1805-4AA0-B049-B70861C07367}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RESET_MX" ID="{535F91F6-9220-412A-9494-2E53B0DDB300}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<ObjectRef Name="playMXStinger4" ID="{46832306-28C6-4D68-8C11-C1533B4C6136}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playMXStinger5" ID="{FB8F3FF0-9238-461B-ABA4-29650712444F}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="END_ANIMATION_CREDITS" ID="{C28893AB-5DBA-441B-8D59-2623FB9185FB}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playText" ID="{C4690F1B-435F-4D97-8F03-510063D0EA34}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RESET_MX" ID="{535F91F6-9220-412A-9494-2E53B0DDB300}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
