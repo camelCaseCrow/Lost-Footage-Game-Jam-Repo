@@ -38,8 +38,28 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b590ef9aaca1b644a6e9a72488f12495
     GuidInternal: 
-    m_lastTime: -8584075462287410456
+    m_lastTime: -8584074985053610820
     List:
+    - name: AMB
+      guid: 43bf47e87499394aaddc05678d194162
+      id: 1117531639
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b590ef9aaca1b644a6e9a72488f12495
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SX _Bus
+        ObjectType: 2
+        guid: ba312375263ccf49bf569fe7aa3d8e63
+      - ElementName: AMB
+        ObjectType: 2
+        guid: 43bf47e87499394aaddc05678d194162
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SX _Bus\AMB
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +74,80 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: MX_Bus
+      guid: c1c12241385e3b4f990598d2e25d5cbe
+      id: 33300213
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b590ef9aaca1b644a6e9a72488f12495
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: MX_Bus
+        ObjectType: 2
+        guid: c1c12241385e3b4f990598d2e25d5cbe
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MX_Bus
+    - name: SFX
+      guid: b6bba0b57102db44a2d44d7c8646d4ce
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b590ef9aaca1b644a6e9a72488f12495
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SX _Bus
+        ObjectType: 2
+        guid: ba312375263ccf49bf569fe7aa3d8e63
+      - ElementName: SFX
+        ObjectType: 2
+        guid: b6bba0b57102db44a2d44d7c8646d4ce
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SX _Bus\SFX
+    - name: SX _Bus
+      guid: ba312375263ccf49bf569fe7aa3d8e63
+      id: 648456911
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b590ef9aaca1b644a6e9a72488f12495
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SX _Bus
+        ObjectType: 2
+        guid: ba312375263ccf49bf569fe7aa3d8e63
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SX _Bus
+    - name: UI
+      guid: d7253cf42ee22a4cbc03018263f4e311
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b590ef9aaca1b644a6e9a72488f12495
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SX _Bus
+        ObjectType: 2
+        guid: ba312375263ccf49bf569fe7aa3d8e63
+      - ElementName: UI
+        ObjectType: 2
+        guid: d7253cf42ee22a4cbc03018263f4e311
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SX _Bus\UI
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +160,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 795363f50cb05c4baa0971b27350e494
     GuidInternal: 
-    m_lastTime: -8584075462286677228
+    m_lastTime: -8584074985049662926
     List:
     - name: MASTER
       guid: c51f1599e3000f42988e62f6a0111084
@@ -94,11 +188,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 9b50d4e385558444a7831404c7e07f85
     GuidInternal: 
-    m_lastTime: -8584075462287585914
+    m_lastTime: -8584074985054010927
     List:
-    - name: TEST
-      guid: 0ab0656ee939ff479ef3aa9febccebbb
-      id: 3157003241
+    - name: Ambience
+      guid: 7575fcd32249a246902a98f413c87c15
+      id: 85412153
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -106,13 +200,680 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 9b50d4e385558444a7831404c7e07f85
-      - ElementName: TEST
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 7575fcd32249a246902a98f413c87c15
+      Path: Events\Default Work Unit\SFX\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AngelScrape
+      guid: b16b25e9c18c3e4eb00f7996c7bbef84
+      id: 3364115928
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: AngelScrape
         ObjectType: 3
-        guid: 0ab0656ee939ff479ef3aa9febccebbb
-      Path: Events\Default Work Unit\TEST
+        guid: b16b25e9c18c3e4eb00f7996c7bbef84
+      Path: Events\Default Work Unit\SFX\MainSFX\AngelScrape
+      maxAttenuation: 0
+      maxDuration: 0.9603125
+      minDuration: 0.9603125
+    - name: AngelTurn
+      guid: 3f0b72ad21459943b6b7ca7fe9a2910a
+      id: 541930357
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: AngelTurn
+        ObjectType: 3
+        guid: 3f0b72ad21459943b6b7ca7fe9a2910a
+      Path: Events\Default Work Unit\SFX\MainSFX\AngelTurn
+      maxAttenuation: 0
+      maxDuration: 1.0064167
+      minDuration: 1.0064167
+    - name: DoorKnock
+      guid: d714a81a68fc024fbd5d0c9e02835ae6
+      id: 287631195
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: DoorKnock
+        ObjectType: 3
+        guid: d714a81a68fc024fbd5d0c9e02835ae6
+      Path: Events\Default Work Unit\SFX\MainSFX\DoorKnock
+      maxAttenuation: 0
+      maxDuration: 1.9499583
+      minDuration: 1.9499583
+    - name: DoorLock
+      guid: af160b2809058f45973f2e2bf3e1fb2a
+      id: 2536181312
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: DoorLock
+        ObjectType: 3
+        guid: af160b2809058f45973f2e2bf3e1fb2a
+      Path: Events\Default Work Unit\SFX\MainSFX\DoorLock
+      maxAttenuation: 0
+      maxDuration: 1.1667292
+      minDuration: 1.1667292
+    - name: GlassCollect
+      guid: 5cfe2bdb7a11e041a240129bd2a66f75
+      id: 3845124483
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: GlassCollect
+        ObjectType: 3
+        guid: 5cfe2bdb7a11e041a240129bd2a66f75
+      Path: Events\Default Work Unit\SFX\MainSFX\GlassCollect
+      maxAttenuation: 0
+      maxDuration: 0.37554166
+      minDuration: 0.26477084
+    - name: GlassPlace
+      guid: 34b3ff73da559a48b053795fa027bf27
+      id: 1071017484
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: GlassPlace
+        ObjectType: 3
+        guid: 34b3ff73da559a48b053795fa027bf27
+      Path: Events\Default Work Unit\SFX\MainSFX\GlassPlace
+      maxAttenuation: 0
+      maxDuration: 0.6039583
+      minDuration: 0.5535
+    - name: MainSFX
+      guid: 9d905a7690a77e4f8df35b39c942a06a
+      id: 2233209675
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      Path: Events\Default Work Unit\SFX\MainSFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MUSIC
+      guid: 8f85ef8869774f48ad064a0d68baba4c
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 8f85ef8869774f48ad064a0d68baba4c
+      Path: Events\Default Work Unit\MUSIC
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OrganKey1
+      guid: 2305211ca4ae074c89e2dd3abb2f5f34
+      id: 426812262
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      - ElementName: OrganKey1
+        ObjectType: 3
+        guid: 2305211ca4ae074c89e2dd3abb2f5f34
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys\OrganKey1
+      maxAttenuation: 0
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: OrganKey2
+      guid: 7153632d0963a145889b79cbfb2bf715
+      id: 426812261
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      - ElementName: OrganKey2
+        ObjectType: 3
+        guid: 7153632d0963a145889b79cbfb2bf715
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys\OrganKey2
+      maxAttenuation: 0
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: OrganKey3
+      guid: 072574b0cf32fa46ae22293556af87db
+      id: 426812260
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      - ElementName: OrganKey3
+        ObjectType: 3
+        guid: 072574b0cf32fa46ae22293556af87db
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys\OrganKey3
+      maxAttenuation: 0
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: OrganKey4
+      guid: 9060eef894fa4d47be09942381ee1204
+      id: 426812259
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      - ElementName: OrganKey4
+        ObjectType: 3
+        guid: 9060eef894fa4d47be09942381ee1204
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys\OrganKey4
+      maxAttenuation: 0
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: OrganKey5
+      guid: 5c7e96145196cf4ca8d789ff5de30e1c
+      id: 426812258
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      - ElementName: OrganKey5
+        ObjectType: 3
+        guid: 5c7e96145196cf4ca8d789ff5de30e1c
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys\OrganKey5
+      maxAttenuation: 0
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: OrganKey6
+      guid: cd3ccefd2f55e54eb2a2190aceec9db5
+      id: 426812257
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      - ElementName: OrganKey6
+        ObjectType: 3
+        guid: cd3ccefd2f55e54eb2a2190aceec9db5
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys\OrganKey6
+      maxAttenuation: 0
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: OrganKey7
+      guid: 7ee66abd7cd3c24e8c446355794af4d5
+      id: 426812256
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      - ElementName: OrganKey7
+        ObjectType: 3
+        guid: 7ee66abd7cd3c24e8c446355794af4d5
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys\OrganKey7
+      maxAttenuation: 0
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: OrganKey8
+      guid: 413501385617844a8985bdc778092220
+      id: 426812271
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      - ElementName: OrganKey8
+        ObjectType: 3
+        guid: 413501385617844a8985bdc778092220
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys\OrganKey8
+      maxAttenuation: 0
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: OrganKeys
+      guid: b93d3450fb9e8248900bf446f1df6416
+      id: 426812196
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganKeys
+        ObjectType: 4
+        guid: b93d3450fb9e8248900bf446f1df6416
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganKeys
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: OrganStop
+      guid: 9f90280eb9d9514283dd9e1ea6d46f9a
+      id: 1037731248
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: OrganStop
+        ObjectType: 3
+        guid: 9f90280eb9d9514283dd9e1ea6d46f9a
+      Path: Events\Default Work Unit\SFX\MainSFX\OrganStop
+      maxAttenuation: 0
+      maxDuration: 0.45866665
+      minDuration: 0.39345834
+    - name: playAmbience
+      guid: bb6104dbe76bac41902215e631ddc8a4
+      id: 1765704519
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: Ambience
+        ObjectType: 4
+        guid: 7575fcd32249a246902a98f413c87c15
+      - ElementName: playAmbience
+        ObjectType: 3
+        guid: bb6104dbe76bac41902215e631ddc8a4
+      Path: Events\Default Work Unit\SFX\Ambience\playAmbience
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: playBack
+      guid: 1ff971843cf4ae4a860906adca9658a6
+      id: 3413458270
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: UI
+        ObjectType: 4
+        guid: c3581b67aa8e4743a703b12ebdbff836
+      - ElementName: playBack
+        ObjectType: 3
+        guid: 1ff971843cf4ae4a860906adca9658a6
+      Path: Events\Default Work Unit\SFX\UI\playBack
+      maxAttenuation: 0
+      maxDuration: 0.9039375
+      minDuration: 0.9039375
+    - name: playHover
+      guid: 35e11db1c6311548a0aa089a6d4f6fb6
+      id: 3608081383
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: UI
+        ObjectType: 4
+        guid: c3581b67aa8e4743a703b12ebdbff836
+      - ElementName: playHover
+        ObjectType: 3
+        guid: 35e11db1c6311548a0aa089a6d4f6fb6
+      Path: Events\Default Work Unit\SFX\UI\playHover
+      maxAttenuation: 0
+      maxDuration: 0.72910416
+      minDuration: 0.72910416
+    - name: playMainMusic
+      guid: 1e26434d19d1474683bbc846220b94f4
+      id: 277487121
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 8f85ef8869774f48ad064a0d68baba4c
+      - ElementName: playMainMusic
+        ObjectType: 3
+        guid: 1e26434d19d1474683bbc846220b94f4
+      Path: Events\Default Work Unit\MUSIC\playMainMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: playMenuMusic
+      guid: 885e29ce87c6024ea7f0f6edd20a7963
+      id: 413545259
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 8f85ef8869774f48ad064a0d68baba4c
+      - ElementName: playMenuMusic
+        ObjectType: 3
+        guid: 885e29ce87c6024ea7f0f6edd20a7963
+      Path: Events\Default Work Unit\MUSIC\playMenuMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: playMusicStingers
+      guid: 14812850c6b4334e81edb1de710f3e52
+      id: 2855001309
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 8f85ef8869774f48ad064a0d68baba4c
+      - ElementName: playMusicStingers
+        ObjectType: 3
+        guid: 14812850c6b4334e81edb1de710f3e52
+      Path: Events\Default Work Unit\MUSIC\playMusicStingers
+      maxAttenuation: 0
+      maxDuration: 4.8
+      minDuration: 0
+    - name: playSelect
+      guid: b9d2892b03b3fa429956b7752ef97525
+      id: 4273230119
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: UI
+        ObjectType: 4
+        guid: c3581b67aa8e4743a703b12ebdbff836
+      - ElementName: playSelect
+        ObjectType: 3
+        guid: b9d2892b03b3fa429956b7752ef97525
+      Path: Events\Default Work Unit\SFX\UI\playSelect
+      maxAttenuation: 0
+      maxDuration: 0.9209375
+      minDuration: 0.9209375
+    - name: SFX
+      guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      Path: Events\Default Work Unit\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TapeAngel
+      guid: 69d7177ebb291041a7340ae55e15fc90
+      id: 2695946112
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: TapeAngel
+        ObjectType: 3
+        guid: 69d7177ebb291041a7340ae55e15fc90
+      Path: Events\Default Work Unit\SFX\MainSFX\TapeAngel
+      maxAttenuation: 0
+      maxDuration: 0.8776875
+      minDuration: 0.8776875
+    - name: TapeMeasure
+      guid: 55b555552e79be45ac2af28a4ecfc91f
+      id: 1986188383
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: MainSFX
+        ObjectType: 4
+        guid: 9d905a7690a77e4f8df35b39c942a06a
+      - ElementName: TapeMeasure
+        ObjectType: 3
+        guid: 55b555552e79be45ac2af28a4ecfc91f
+      Path: Events\Default Work Unit\SFX\MainSFX\TapeMeasure
+      maxAttenuation: 0
+      maxDuration: 1.2770833
+      minDuration: 1.2770833
+    - name: UI
+      guid: c3581b67aa8e4743a703b12ebdbff836
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b50d4e385558444a7831404c7e07f85
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 48c97c9ac6c2ae44b47c732e6b0eacc4
+      - ElementName: UI
+        ObjectType: 4
+        guid: c3581b67aa8e4743a703b12ebdbff836
+      Path: Events\Default Work Unit\SFX\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
