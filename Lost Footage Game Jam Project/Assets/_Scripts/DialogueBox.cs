@@ -57,6 +57,11 @@ public class DialogueBox : MonoBehaviour
     {
         panel.SetActive(false);
         playerInput.SwitchCurrentActionMap("Player");
-        onFinished.Invoke();
+
+        // null means nothing happens after these lines.
+        if (onFinished != null)
+        {
+            onFinished.Invoke();
+        }
     }
 }
