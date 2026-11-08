@@ -8,13 +8,16 @@ public class LockedDoor : MonoBehaviour
     [SerializeField, TextArea(2, 5)] private string[] lockedLines;            // the locked scene
     [SerializeField, TextArea(2, 5)] private string[] stillLockedLines;       // next try: "(It still won't FUCKING open.)" …
     [SerializeField, TextArea(2, 5)] private string[] stillLockedAgainLines;  // every try after: "(And nope, it's still not opening.)"
+    [SerializeField, TextArea(2, 5)] private string[] openLines;              // state 07: "(The Eye is complete.)" … "(Above you.)"
     [SerializeField] private AK.Wwise.Event tryOpenSound;   // she pulls the handle (not played for "Can't leave yet")
+    [SerializeField] private AK.Wwise.Event doorOpenSound;  // "(The door creaks open,)"
 
     // The door's phases, in story order.
-    private enum DoorState { NotYet, ReadyToTry, Tried, TriedTwice }
+    private enum DoorState { NotYet, ReadyToTry, Tried, TriedTwice, Unlocked }
 
     private DoorState state = DoorState.NotYet;
     private Action onFinished;    // runs after the locked scene
+    private Action onOpened;      // runs after the door's last line
 
     // Called by GameFlow once the floor is measured. whenFinished runs after the locked scene.
     public void Begin(Action whenFinished)
@@ -23,12 +26,26 @@ public class LockedDoor : MonoBehaviour
         state = DoorState.ReadyToTry;
     }
 
+    // Called by GameFlow at the start of state 07. whenOpened runs after the open lines.
+    public void Unlock(Action whenOpened)
+    {
+        onOpened = whenOpened;
+        state = DoorState.Unlocked;
+    }
+
     // Wired to the door's Interactable Object > On Interact.
     public void TryOpen()
     {
         if (state == DoorState.NotYet)
         {
             dialogueBox.Play(notYetLines, null);
+            return;
+        }
+
+        if (state == DoorState.Unlocked)
+        {
+            doorOpenSound.Post(gameObject);
+            dialogueBox.Play(openLines, onOpened);
             return;
         }
 

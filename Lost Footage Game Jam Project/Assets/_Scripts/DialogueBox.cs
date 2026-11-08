@@ -9,6 +9,8 @@ public class DialogueBox : MonoBehaviour
     [SerializeField] private TMP_Text lineText;         // the text inside the box
     [SerializeField] private PlayerInput playerInput;   // on the Player
     [SerializeField] private AK.Wwise.Event openSound;  // the box pops up
+    [SerializeField] private AK.Wwise.Event shardReceivedSound;   // every time a shard is picked up
+    private const string ShardLine = "(You pick it up.)";          // the line all 3 shard scenes share
     [SerializeField] private GameObject choices;        // holds Yes and No, only shown for questions
     [SerializeField] private TMP_Text yesText;
     [SerializeField] private TMP_Text noText;
@@ -70,6 +72,11 @@ public class DialogueBox : MonoBehaviour
     private void ShowCurrentLine()
     {
         lineText.text = lines[currentLine];
+
+        if (lines[currentLine] == ShardLine)
+        {
+            shardReceivedSound.Post(gameObject);
+        }
 
         bool onLastLine = currentLine == lines.Length - 1;
         asking = hasQuestionAtEnd && onLastLine;

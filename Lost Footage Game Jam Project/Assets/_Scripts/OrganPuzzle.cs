@@ -13,7 +13,7 @@ public class OrganPuzzle : MonoBehaviour
     [SerializeField] private bool[] correctStops = new bool[8];   // ticked = must be pulled. 0–3 left column top→bottom, 4–7 right column
     [SerializeField] private AK.Wwise.Event stopPulledSound;
     [SerializeField] private AK.Wwise.Event stopPushedSound;
-    [SerializeField] private AK.Wwise.Event pieceFoundSound;
+    [SerializeField] private AK.Wwise.Event stopsCompleteSound;   // the right pattern is set
     [SerializeField, TextArea(2, 5)] private string[] firstLines;        // 1st time: "(A massive pipe organ…" … "(…the only thing you can mess with is the stops…)"
     [SerializeField, TextArea(2, 5)] private string[] laterLines;        // after that; ends with "(Mess with the stops?)"
     [SerializeField, TextArea(2, 5)] private string[] foundPieceLines;   // "(Something shimmers by the organ pedal.)" …
@@ -181,7 +181,7 @@ public class OrganPuzzle : MonoBehaviour
     private void Solve()
     {
         CloseStops();
-        pieceFoundSound.Post(organ);
+        stopsCompleteSound.Post(organ);
         dialogueBox.Play(foundPieceLines, onSolved);
     }
 }
