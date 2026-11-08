@@ -11,6 +11,7 @@ public class DoorCutscene : MonoBehaviour
     [SerializeField] private DialogueBox dialogueBox;           // the bottom text box
     [SerializeField, TextArea(2, 5)] private string[] lines;    // what she says after stopping
     [SerializeField] private AK.Wwise.Event doorEnterSound;
+    [SerializeField] private AK.Wwise.Event linesFinishedSound;   // her opening lines end, the measuring begins
 
     private bool walking;
     private Action onFinished;   // the method to run after her last line
@@ -44,6 +45,12 @@ public class DoorCutscene : MonoBehaviour
         hera.SetDirection(Vector2.zero);
         heraCollider.enabled = true;     // walls block her again
         playerInput.ActivateInput();
-        dialogueBox.Play(lines, onFinished);
+        dialogueBox.Play(lines, FinishCutscene);
+    }
+
+    private void FinishCutscene()
+    {
+        linesFinishedSound.Post(hera.gameObject);
+        onFinished.Invoke();
     }
 }

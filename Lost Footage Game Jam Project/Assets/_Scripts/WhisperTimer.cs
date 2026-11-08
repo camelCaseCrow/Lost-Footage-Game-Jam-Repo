@@ -3,6 +3,7 @@ using UnityEngine;
 public class WhisperTimer : MonoBehaviour
 {
     [SerializeField] private AK.Wwise.Event whisperSound;
+    [SerializeField] private AK.Wwise.Event noiseHeardSound;   // plays right before "…!"
     [SerializeField] private GameObject leftStatue;            // the whisper comes from here
     [SerializeField] private DialogueBox dialogueBox;
     [SerializeField, TextArea(2, 5)] private string[] firstWhisperLines;   // "…!" "(What was that noise?)"
@@ -27,6 +28,7 @@ public class WhisperTimer : MonoBehaviour
 
         waiting = false;
         whisperSound.Post(leftStatue);   // the Wwise event repeats the whispers by itself from here on
+        noiseHeardSound.Post(leftStatue);
         dialogueBox.Play(firstWhisperLines, null);
     }
 }

@@ -13,6 +13,7 @@ public class MeasureFloorPuzzle : MonoBehaviour
     [SerializeField] private DialogueBox dialogueBox;
     [SerializeField, TextArea(2, 5)] private string[] tapeOutLines;   // after the first corner
     [SerializeField, TextArea(2, 5)] private string[] solvedLines;    // after the last corner
+    [SerializeField, TextArea(2, 5)] private string[] wallLengthLines;   // one per wall, in order: "(The tape reads 36 feet.)" …
 
     private bool active;                                 // true once GameFlow starts this puzzle
     private int nextCorner;                              // which corner she has to press next
@@ -24,6 +25,11 @@ public class MeasureFloorPuzzle : MonoBehaviour
         if (corners.Length < 2)
         {
             throw new InvalidOperationException($"MeasureFloorPuzzle on '{name}': add at least 2 corners, in measuring order.");
+        }
+
+        if (wallLengthLines.Length != corners.Length - 1)
+        {
+            throw new InvalidOperationException($"MeasureFloorPuzzle on '{name}': Wall Length Lines needs one line per wall ({corners.Length - 1}).");
         }
 
         // Every corner needs its red outline.
@@ -72,14 +78,33 @@ public class MeasureFloorPuzzle : MonoBehaviour
         if (lastCorner)
         {
             active = false;
-            dialogueBox.Play(solvedLines, PutTapeAway);
+            dialogueBox.Play(Prepend(CurrentWallLength(), solvedLines), PutTapeAway);   // "(…33 feet.)", then "Room measured!" …
         }
         else if (firstCorner)
         {
             dialogueBox.Play(tapeOutLines, null);
         }
+        else
+        {
+            dialogueBox.Play(new[] { CurrentWallLength() }, null);   // a middle corner says its wall's length
+        }
 
         ShowNextCornerOutline();   // moves to the next corner, or hides all once solved
+    }
+
+    // The length line for the wall that was just finished. Corner B finishes wall 0, corner C wall 1.
+    private string CurrentWallLength()
+    {
+        return wallLengthLines[nextCorner - 2];
+    }
+
+    // One line followed by the rest.
+    private string[] Prepend(string firstLine, string[] rest)
+    {
+        string[] lines = new string[rest.Length + 1];
+        lines[0] = firstLine;
+        rest.CopyTo(lines, 1);
+        return lines;
     }
 
     // Runs after the solved lines. Hides the tape, then tells GameFlow the puzzle is done.
