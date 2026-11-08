@@ -36,7 +36,7 @@ public class DialogueBox : MonoBehaviour
         lineText.text = lines[currentLine];
     }
 
-    // Wired to PlayerInput > Events > UI > Submit.
+    // Wired to PlayerInput > Events > UI > Submit
     public void Advance(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
