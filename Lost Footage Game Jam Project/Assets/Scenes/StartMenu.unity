@@ -295,6 +295,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   introScreen: {fileID: 1089683650}
+  startClickSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a7a9a6f0b7cf14272a2e786cdb525f77, type: 2}
+  continueClickSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 08042a9c1985d488a99ba0c3fdbc0c83, type: 2}
 --- !u!1 &488845063
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,27 +20,51 @@ namespace AK
         static const AkUniqueID DOORLOCK = 2536181312U;
         static const AkUniqueID GLASSCOLLECT = 3845124483U;
         static const AkUniqueID GLASSPLACE = 1071017484U;
-        static const AkUniqueID ORGANKEY1 = 426812262U;
-        static const AkUniqueID ORGANKEY2 = 426812261U;
-        static const AkUniqueID ORGANKEY3 = 426812260U;
-        static const AkUniqueID ORGANKEY4 = 426812259U;
-        static const AkUniqueID ORGANKEY5 = 426812258U;
-        static const AkUniqueID ORGANKEY6 = 426812257U;
-        static const AkUniqueID ORGANKEY7 = 426812256U;
-        static const AkUniqueID ORGANKEY8 = 426812271U;
         static const AkUniqueID ORGANSTOP = 1037731248U;
         static const AkUniqueID PLAYAMBIENCE = 1765704519U;
-        static const AkUniqueID PLAYBACK = 3413458270U;
-        static const AkUniqueID PLAYHOVER = 3608081383U;
-        static const AkUniqueID PLAYMAINMUSIC = 277487121U;
+        static const AkUniqueID PLAYCONTINUE = 1853194852U;
+        static const AkUniqueID PLAYCREDITS = 2250688815U;
         static const AkUniqueID PLAYMENUMUSIC = 413545259U;
-        static const AkUniqueID PLAYMUSICSTINGERS = 2855001309U;
-        static const AkUniqueID PLAYSELECT = 4273230119U;
+        static const AkUniqueID PLAYMXSTINGER1 = 3691268467U;
+        static const AkUniqueID PLAYMXSTINGER2 = 3691268464U;
+        static const AkUniqueID PLAYMXSTINGER3 = 3691268465U;
+        static const AkUniqueID PLAYMXSTINGER4 = 3691268470U;
+        static const AkUniqueID PLAYMXSTINGER5 = 3691268471U;
+        static const AkUniqueID PLAYSTART = 2338763341U;
         static const AkUniqueID PLAYTEXT = 4273968882U;
         static const AkUniqueID PLAYWHISPERS = 679634934U;
+        static const AkUniqueID RESET_MX = 1822020242U;
         static const AkUniqueID TAPEANGEL = 2695946112U;
         static const AkUniqueID TAPEMEASURE = 1986188383U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUSICSYSTEM
+        {
+            static const AkUniqueID GROUP = 584727657U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BASS = 1291433344U;
+                static const AkUniqueID BASS_ARP = 2798139058U;
+                static const AkUniqueID BASS_ARP_CHIME = 3348164903U;
+                static const AkUniqueID BASS_ARP_CHIME_BELL = 3629177121U;
+                static const AkUniqueID EVERYTHING = 972902454U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSICSYSTEM
+
+    } // namespace STATES
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID PUZZCOMP1 = 1425593178U;
+        static const AkUniqueID PUZZCOMP2 = 1425593177U;
+        static const AkUniqueID PUZZCOMP3 = 1425593176U;
+        static const AkUniqueID PUZZCOMP4 = 1425593183U;
+        static const AkUniqueID PUZZCOMPEXTRA = 158866781U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

@@ -9,6 +9,34 @@
 							<ObjectRef Name="playAmbience" ID="{DB0461BB-6BE7-41AC-9022-15E631DDC8A4}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="playContinue" ID="{2B89D2B9-B303-42FA-9956-B7752EF97525}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playMXStinger1" ID="{50288114-B4C6-4E33-81ED-B1DE710F3E52}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playMXStinger2" ID="{9774F717-290E-4CC1-8936-2E880086EC0F}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playMXStinger3" ID="{83D3B0FF-1805-4AA0-B049-B70861C07367}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playMXStinger4" ID="{46832306-28C6-4D68-8C11-C1533B4C6136}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playMXStinger5" ID="{FB8F3FF0-9238-461B-ABA4-29650712444F}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RESET_MX" ID="{535F91F6-9220-412A-9494-2E53B0DDB300}" WorkUnitID="{E3D4509B-5585-4484-A783-1404C7E07F85}"/>
+							<Position X="2" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>

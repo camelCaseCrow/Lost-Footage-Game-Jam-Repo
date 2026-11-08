@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="MusicSystem" ID="{2CEA22F3-3980-463C-9E0D-75271995A1E8}">
+					<ChildrenList>
+						<State Name="None" ID="{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}"/>
+						<State Name="Bass" ID="{3700EAA6-2775-468D-96FE-5E56DF178E8A}"/>
+						<State Name="Bass_Arp" ID="{90361738-4026-4AE2-B705-904FBE756F7D}"/>
+						<State Name="Bass_Arp_Chime" ID="{C7160AB7-08F1-47F4-9742-55C676C7C675}"/>
+						<State Name="Bass_Arp_Chime_Bell" ID="{61CA71F4-3AA2-4794-B412-373E5E80DC27}"/>
+						<State Name="Everything" ID="{6CB6E74D-8647-497F-ACDC-A8D560F9B5AA}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{22E6677B-9DE1-0808-E167-469F584639F0}",
+    "Hash": "{5B6D2202-51BA-342A-43FC-23FE970EEE62}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -130,9 +130,55 @@
        ]
       }
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "584727657",
+      "Name": "MusicSystem",
+      "ObjectPath": "\\States\\Default Work Unit\\MusicSystem",
+      "GUID": "{2CEA22F3-3980-463C-9E0D-75271995A1E8}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\None",
+        "GUID": "{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}"
+       },
+       {
+        "Id": "972902454",
+        "Name": "Everything",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Everything",
+        "GUID": "{6CB6E74D-8647-497F-ACDC-A8D560F9B5AA}"
+       },
+       {
+        "Id": "1291433344",
+        "Name": "Bass",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass",
+        "GUID": "{3700EAA6-2775-468D-96FE-5E56DF178E8A}"
+       },
+       {
+        "Id": "2798139058",
+        "Name": "Bass_Arp",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp",
+        "GUID": "{90361738-4026-4AE2-B705-904FBE756F7D}"
+       },
+       {
+        "Id": "3348164903",
+        "Name": "Bass_Arp_Chime",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp_Chime",
+        "GUID": "{C7160AB7-08F1-47F4-9742-55C676C7C675}"
+       },
+       {
+        "Id": "3629177121",
+        "Name": "Bass_Arp_Chime_Bell",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp_Chime_Bell",
+        "GUID": "{61CA71F4-3AA2-4794-B412-373E5E80DC27}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{014ECF4D-9BCB-2523-89BB-F1AD4F82DA02}"
+  "FileHash": "{E2ACB209-53B5-4E6C-6B1A-B278845C16D2}"
  }
 }

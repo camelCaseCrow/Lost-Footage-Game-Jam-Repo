@@ -1,3 +1,14 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	584727657	MusicSystem			\Default Work Unit\MusicSystem	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MusicSystem			
+	972902454	Everything	MusicSystem			
+	1291433344	Bass	MusicSystem			
+	2798139058	Bass_Arp	MusicSystem			
+	3348164903	Bass_Arp_Chime	MusicSystem			
+	3629177121	Bass_Arp_Chime_Bell	MusicSystem			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	33300213	MX_Bus			\Default Work Unit\Master Audio Bus\MX_Bus	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SX _Bus\SFX	

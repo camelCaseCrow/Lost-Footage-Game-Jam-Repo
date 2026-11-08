@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{99151FC5-00E3-420F-988E-62F6A0111084}",
     "Language": "SFX",
-    "Hash": "{F2BC4139-3DBF-0385-7603-8CC467334193}",
+    "Hash": "{E4BD456A-B583-B8B4-88A6-76B94A1C0D36}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MASTER",
     "ShortName": "MASTER",
     "Path": "MASTER.bnk",
@@ -56,22 +56,6 @@
       "CachePath": "DB/{DBD5EF62-A306-D508-1B4C-21DB220552FD}.wem"
      },
      {
-      "Id": "67309141",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_character_interact_organkey8.wav",
-      "CachePath": "64/{648C7C6B-EDD3-507B-E1C9-47890B6417EF}.wem"
-     },
-     {
-      "Id": "74642959",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_character_interact_organkey3.wav",
-      "CachePath": "7C/{7C83EE36-3C20-B6AA-C0B0-B1E755C656C4}.wem"
-     },
-     {
       "Id": "74969871",
       "Language": "SFX",
       "Streaming": "false",
@@ -110,14 +94,6 @@
       "Location": "Memory",
       "ShortName": "sx_amb_spot_creaks_6.wav",
       "CachePath": "01/{012CEB28-2C92-9F1F-6D7E-16857129BB36}.wem"
-     },
-     {
-      "Id": "149967102",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_character_interact_organkey2.wav",
-      "CachePath": "09/{09BB2BC6-B049-DC9E-9A99-F87D3CCEE595}.wem"
      },
      {
       "Id": "161845992",
@@ -238,14 +214,6 @@
       "Location": "Memory",
       "ShortName": "mx_chracter_interact_mosaicpiece.wav",
       "CachePath": "47/{47B4489C-D70A-6ABA-F26A-4342BFB6A3EB}.wem"
-     },
-     {
-      "Id": "355695294",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_ui_back.wav",
-      "CachePath": "15/{15F7C519-2D22-4E7C-DFE5-64CAA7A094A6}.wem"
      },
      {
       "Id": "392820767",
@@ -416,14 +384,6 @@
       "CachePath": "0D/{0D7723DE-1123-10C0-338C-4C642CEF022F}.wem"
      },
      {
-      "Id": "767904568",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_character_interact_organkey4.wav",
-      "CachePath": "B8/{B8A5DDF1-B521-679F-E8D4-57DCD20E9333}.wem"
-     },
-     {
       "Id": "781970988",
       "Language": "SFX",
       "Streaming": "false",
@@ -446,14 +406,6 @@
       "Location": "Memory",
       "ShortName": "sx_amb_spot_whispers_1.wav",
       "CachePath": "8E/{8E888B85-1530-C8FD-C621-3F34A31BE64C}.wem"
-     },
-     {
-      "Id": "790346723",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_character_interact_organkey6.wav",
-      "CachePath": "97/{97770893-3A7E-5C52-A98D-8EBC080ABECB}.wem"
      },
      {
       "Id": "800775824",
@@ -544,6 +496,14 @@
       "CachePath": "1E/{1E6E4827-E49F-CC9B-431F-04E238E608F8}.wem"
      },
      {
+      "Id": "917521495",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sx_whisper_openMy.wav",
+      "CachePath": "C5/{C523C411-FA33-ADD8-92D9-00AD53E0AB44}.wem"
+     },
+     {
       "Id": "938808818",
       "Language": "SFX",
       "Streaming": "false",
@@ -576,22 +536,6 @@
       "CachePath": "18/{183FD703-D858-4F6C-D1D2-FEA78D4EA320}.wem"
      },
      {
-      "Id": "992469405",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_character_interact_organkey7.wav",
-      "CachePath": "04/{04CBB9ED-DC47-5A2F-3C70-CBBD94B9073A}.wem"
-     },
-     {
-      "Id": "1011077322",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_character_interact_organkey5.wav",
-      "CachePath": "A8/{A856CD9E-169C-F553-E3F6-E54F718E9B1D}.wem"
-     },
-     {
       "Id": "1016330715",
       "Language": "SFX",
       "Streaming": "false",
@@ -608,14 +552,6 @@
       "CachePath": "5F/{5FF6A426-E328-011F-EDFE-48D85F8FBF0A}.wem"
      },
      {
-      "Id": "1036760195",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sx_character_interact_organkey1.wav",
-      "CachePath": "CB/{CB0E0C2A-9DE5-1EDF-70B9-E69FFDE71B48}.wem"
-     },
-     {
       "Id": "1039221686",
       "Language": "SFX",
       "Streaming": "false",
@@ -630,6 +566,14 @@
       "Location": "Memory",
       "ShortName": "mx_chracter_interact_mosaiccomplete.wav",
       "CachePath": "A4/{A4662E99-FB52-A1FF-CDA7-0DBDF7688468}.wem"
+     },
+     {
+      "Id": "1064049690",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sx_whisper_praise.wav",
+      "CachePath": "2A/{2AF79DA2-0A7B-DA9F-ED07-317C83F249A4}.wem"
      }
     ],
     "Events": [
@@ -782,182 +726,6 @@
        },
        {
         "Id": "686262234"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "426812262",
-      "Name": "OrganKey1",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganKeys\\OrganKey1",
-      "GUID": "{1C210523-AEA4-4C07-89E2-DD3ABB2F5F34}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.4",
-      "DurationMax": "2.4",
-      "MediaRefs": [
-       {
-        "Id": "1036760195"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "426812261",
-      "Name": "OrganKey2",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganKeys\\OrganKey2",
-      "GUID": "{2D635371-6309-45A1-889B-79CBFB2BF715}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.4",
-      "DurationMax": "2.4",
-      "MediaRefs": [
-       {
-        "Id": "149967102"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "426812260",
-      "Name": "OrganKey3",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganKeys\\OrganKey3",
-      "GUID": "{B0742507-32CF-46FA-AE22-293556AF87DB}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.4",
-      "DurationMax": "2.4",
-      "MediaRefs": [
-       {
-        "Id": "74642959"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "426812259",
-      "Name": "OrganKey4",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganKeys\\OrganKey4",
-      "GUID": "{F8EE6090-FA94-474D-BE09-942381EE1204}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.4",
-      "DurationMax": "2.4",
-      "MediaRefs": [
-       {
-        "Id": "767904568"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "426812258",
-      "Name": "OrganKey5",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganKeys\\OrganKey5",
-      "GUID": "{14967E5C-9651-4CCF-A8D7-89FF5DE30E1C}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.4",
-      "DurationMax": "2.4",
-      "MediaRefs": [
-       {
-        "Id": "1011077322"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "426812257",
-      "Name": "OrganKey6",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganKeys\\OrganKey6",
-      "GUID": "{FDCE3CCD-552F-4EE5-B2A2-190ACEEC9DB5}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.4",
-      "DurationMax": "2.4",
-      "MediaRefs": [
-       {
-        "Id": "790346723"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "426812256",
-      "Name": "OrganKey7",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganKeys\\OrganKey7",
-      "GUID": "{BD6AE67E-D37C-4EC2-8C44-6355794AF4D5}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.4",
-      "DurationMax": "2.4",
-      "MediaRefs": [
-       {
-        "Id": "992469405"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3518710954",
-        "Name": "Sfx_Verb",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
-        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
-       }
-      ]
-     },
-     {
-      "Id": "426812271",
-      "Name": "OrganKey8",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\OrganKeys\\OrganKey8",
-      "GUID": "{38013541-1756-4A84-8985-BDC778092220}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.4",
-      "DurationMax": "2.4",
-      "MediaRefs": [
-       {
-        "Id": "67309141"
        }
       ],
       "AuxBusRefs": [
@@ -1123,54 +891,179 @@
       ]
      },
      {
-      "Id": "3413458270",
-      "Name": "playBack",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playBack",
-      "GUID": "{8471F91F-F43C-4AAE-8609-06ADCA9658A6}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.9039375",
-      "DurationMax": "0.9039375",
-      "MediaRefs": [
-       {
-        "Id": "355695294"
-       }
-      ]
-     },
-     {
-      "Id": "3608081383",
-      "Name": "playHover",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playHover",
-      "GUID": "{B11DE135-31C6-4815-A0AA-089A6D4F6FB6}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.72910416",
-      "DurationMax": "0.72910416",
-      "MediaRefs": [
-       {
-        "Id": "876204604"
-       }
-      ]
-     },
-     {
-      "Id": "277487121",
-      "Name": "playMainMusic",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMainMusic",
-      "GUID": "{4D43261E-D119-4647-83BB-C846220B94F4}",
+      "Id": "1853194852",
+      "Name": "playContinue",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playContinue",
+      "GUID": "{2B89D2B9-B303-42FA-9956-B7752EF97525}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "213352208"
+        "Id": "161845992"
        },
        {
-        "Id": "411712288"
+        "Id": "267662661"
        },
        {
-        "Id": "686870671"
+        "Id": "325336943"
        },
        {
-        "Id": "759252653"
+        "Id": "415559019"
        },
        {
-        "Id": "940548725"
+        "Id": "876204604"
+       },
+       {
+        "Id": "1054300476"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "932042106",
+        "Name": "Mx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MX_Bus\\Mx_Verb",
+        "GUID": "{77EE4C89-2E77-41B4-9362-68ED6B3CBBAB}"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "584727657",
+         "Id": "1291433344",
+         "GUID": "{3700EAA6-2775-468D-96FE-5E56DF178E8A}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "686870671"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "584727657",
+         "Id": "2798139058",
+         "GUID": "{90361738-4026-4AE2-B705-904FBE756F7D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "213352208"
+         },
+         {
+          "Id": "686870671"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "584727657",
+         "Id": "3348164903",
+         "GUID": "{C7160AB7-08F1-47F4-9742-55C676C7C675}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "213352208"
+         },
+         {
+          "Id": "411712288"
+         },
+         {
+          "Id": "686870671"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "584727657",
+         "Id": "3629177121",
+         "GUID": "{61CA71F4-3AA2-4794-B412-373E5E80DC27}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "213352208"
+         },
+         {
+          "Id": "411712288"
+         },
+         {
+          "Id": "686870671"
+         },
+         {
+          "Id": "759252653"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "584727657",
+         "Id": "972902454",
+         "GUID": "{6CB6E74D-8647-497F-ACDC-A8D560F9B5AA}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "213352208"
+         },
+         {
+          "Id": "411712288"
+         },
+         {
+          "Id": "686870671"
+         },
+         {
+          "Id": "759252653"
+         },
+         {
+          "Id": "940548725"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "584727657",
+         "Id": "748895195",
+         "GUID": "{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "686870671"
+         }
+        ]
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "584727657",
+        "Id": "1291433344",
+        "Name": "Bass",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass",
+        "GUID": "{3700EAA6-2775-468D-96FE-5E56DF178E8A}"
+       }
+      ]
+     },
+     {
+      "Id": "2250688815",
+      "Name": "playCredits",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playCredits",
+      "GUID": "{315494A8-7AFE-4146-B864-7258D2F209E6}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "118062420"
+       },
+       {
+        "Id": "811566406"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "932042106",
+        "Name": "Mx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MX_Bus\\Mx_Verb",
+        "GUID": "{77EE4C89-2E77-41B4-9362-68ED6B3CBBAB}"
        }
       ]
      },
@@ -1198,39 +1091,124 @@
       ]
      },
      {
-      "Id": "2855001309",
-      "Name": "playMusicStingers",
-      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMusicStingers",
+      "Id": "3691268467",
+      "Name": "playMXStinger1",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger1",
       "GUID": "{50288114-B4C6-4E33-81ED-B1DE710F3E52}",
+      "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
-      "DurationMax": "4.8",
-      "MediaRefs": [
+      "DurationMax": "0",
+      "ActionTrigger": [
        {
-        "Id": "161845992"
-       },
-       {
-        "Id": "267662661"
-       },
-       {
-        "Id": "325336943"
-       },
-       {
-        "Id": "353184114"
-       },
-       {
-        "Id": "415559019"
-       },
-       {
-        "Id": "1054300476"
+        "Id": "1425593178",
+        "Name": "PuzzComp1",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzComp1",
+        "GUID": "{9B4A755F-CEF0-4E48-87D3-A0CFC3A99491}"
        }
       ]
      },
      {
-      "Id": "4273230119",
-      "Name": "playSelect",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playSelect",
-      "GUID": "{2B89D2B9-B303-42FA-9956-B7752EF97525}",
+      "Id": "3691268464",
+      "Name": "playMXStinger2",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger2",
+      "GUID": "{9774F717-290E-4CC1-8936-2E880086EC0F}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionTrigger": [
+       {
+        "Id": "1425593177",
+        "Name": "PuzzComp2",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzComp2",
+        "GUID": "{46F80267-CFA4-482F-9C75-98ECCACEE838}"
+       }
+      ]
+     },
+     {
+      "Id": "3691268465",
+      "Name": "playMXStinger3",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger3",
+      "GUID": "{83D3B0FF-1805-4AA0-B049-B70861C07367}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionTrigger": [
+       {
+        "Id": "1425593176",
+        "Name": "PuzzComp3",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzComp3",
+        "GUID": "{A26BBB0A-1706-4FC2-84F5-A5EC262AD669}"
+       }
+      ]
+     },
+     {
+      "Id": "3691268470",
+      "Name": "playMXStinger4",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger4",
+      "GUID": "{46832306-28C6-4D68-8C11-C1533B4C6136}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionTrigger": [
+       {
+        "Id": "158866781",
+        "Name": "PuzzCompExtra",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzCompExtra",
+        "GUID": "{09802B61-BF10-4383-B8FC-703DC033C747}"
+       },
+       {
+        "Id": "1425593183",
+        "Name": "PuzzComp4",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzComp4",
+        "GUID": "{505944CD-2A4A-434D-8EF4-B900D46294E4}"
+       }
+      ]
+     },
+     {
+      "Id": "3691268471",
+      "Name": "playMXStinger5",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMXStinger5",
+      "GUID": "{FB8F3FF0-9238-461B-ABA4-29650712444F}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.4",
+      "DurationMax": "4.4",
+      "MediaRefs": [
+       {
+        "Id": "353184114"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "932042106",
+        "Name": "Mx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MX_Bus\\Mx_Verb",
+        "GUID": "{77EE4C89-2E77-41B4-9362-68ED6B3CBBAB}"
+       }
+      ]
+     },
+     {
+      "Id": "2338763341",
+      "Name": "playStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playStart",
+      "GUID": "{B11DE135-31C6-4815-A0AA-089A6D4F6FB6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.72910416",
+      "DurationMax": "0.72910416",
+      "MediaRefs": [
+       {
+        "Id": "876204604"
+       }
+      ]
+     },
+     {
+      "Id": "4273968882",
+      "Name": "playText",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playText",
+      "GUID": "{C4690F1B-435F-4D97-8F03-510063D0EA34}",
       "DurationType": "OneShot",
       "DurationMin": "0.9209375",
       "DurationMax": "0.9209375",
@@ -1241,20 +1219,33 @@
       ]
      },
      {
-      "Id": "4273968882",
-      "Name": "playText",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playText",
-      "GUID": "{C4690F1B-435F-4D97-8F03-510063D0EA34}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "679634934",
       "Name": "playWhispers",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Ambience\\playWhispers",
       "GUID": "{19546513-0506-483E-ADA6-9FC484C99F51}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "917521495"
+       },
+       {
+        "Id": "1064049690"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "4154576717",
+        "Name": "Amb_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\AMB\\Amb_Verb",
+        "GUID": "{5A41F921-A604-465E-87C6-AFB78EFD7350}"
+       }
+      ]
+     },
+     {
+      "Id": "1822020242",
+      "Name": "RESET_MX",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\RESET_MX",
+      "GUID": "{535F91F6-9220-412A-9494-2E53B0DDB300}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
@@ -1304,9 +1295,87 @@
        }
       ]
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "584727657",
+      "Name": "MusicSystem",
+      "ObjectPath": "\\States\\Default Work Unit\\MusicSystem",
+      "GUID": "{2CEA22F3-3980-463C-9E0D-75271995A1E8}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\None",
+        "GUID": "{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}"
+       },
+       {
+        "Id": "972902454",
+        "Name": "Everything",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Everything",
+        "GUID": "{6CB6E74D-8647-497F-ACDC-A8D560F9B5AA}"
+       },
+       {
+        "Id": "1291433344",
+        "Name": "Bass",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass",
+        "GUID": "{3700EAA6-2775-468D-96FE-5E56DF178E8A}"
+       },
+       {
+        "Id": "2798139058",
+        "Name": "Bass_Arp",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp",
+        "GUID": "{90361738-4026-4AE2-B705-904FBE756F7D}"
+       },
+       {
+        "Id": "3348164903",
+        "Name": "Bass_Arp_Chime",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp_Chime",
+        "GUID": "{C7160AB7-08F1-47F4-9742-55C676C7C675}"
+       },
+       {
+        "Id": "3629177121",
+        "Name": "Bass_Arp_Chime_Bell",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicSystem\\Bass_Arp_Chime_Bell",
+        "GUID": "{61CA71F4-3AA2-4794-B412-373E5E80DC27}"
+       }
+      ]
+     }
+    ],
+    "Triggers": [
+     {
+      "Id": "158866781",
+      "Name": "PuzzCompExtra",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzCompExtra",
+      "GUID": "{09802B61-BF10-4383-B8FC-703DC033C747}"
+     },
+     {
+      "Id": "1425593176",
+      "Name": "PuzzComp3",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzComp3",
+      "GUID": "{A26BBB0A-1706-4FC2-84F5-A5EC262AD669}"
+     },
+     {
+      "Id": "1425593177",
+      "Name": "PuzzComp2",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzComp2",
+      "GUID": "{46F80267-CFA4-482F-9C75-98ECCACEE838}"
+     },
+     {
+      "Id": "1425593178",
+      "Name": "PuzzComp1",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzComp1",
+      "GUID": "{9B4A755F-CEF0-4E48-87D3-A0CFC3A99491}"
+     },
+     {
+      "Id": "1425593183",
+      "Name": "PuzzComp4",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\PuzzComp4",
+      "GUID": "{505944CD-2A4A-434D-8EF4-B900D46294E4}"
+     }
     ]
    }
   ],
-  "FileHash": "{E31CE294-9A36-7FEA-AC60-D4CAFFBC6F5F}"
+  "FileHash": "{0F3412DD-0D6C-2A26-EA0B-3DE34D92EDD0}"
  }
 }

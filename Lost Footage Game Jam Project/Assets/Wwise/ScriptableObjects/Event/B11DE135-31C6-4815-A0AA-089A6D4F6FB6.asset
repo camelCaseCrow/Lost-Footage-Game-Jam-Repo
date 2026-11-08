@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa60a02e3dd114a1cba41016546baf46, type: 3}
-  m_Name: 4D43261E-D119-4647-83BB-C846220B94F4
+  m_Name: B11DE135-31C6-4815-A0AA-089A6D4F6FB6
   m_EditorClassIdentifier: 
-  objectName: playMainMusic
-  id: 277487121
-  guid: 4D43261E-D119-4647-83BB-C846220B94F4
+  objectName: playStart
+  id: 2338763341
+  guid: B11DE135-31C6-4815-A0AA-089A6D4F6FB6
   IsInUserDefinedSoundBank: 1
