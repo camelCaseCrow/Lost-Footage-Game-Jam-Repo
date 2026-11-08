@@ -95,19 +95,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{3623B21E-C75E-46B3-94FB-16066E924D8E}" ShortID="626177443">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-												<Property Name="Scope" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64" Value="-96"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sx_amb_whispers" ID="{6E19724B-5CF3-4D41-AFCE-B2A3B2482576}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="playMXStinger3" ID="{83D3B0FF-1805-4AA0-B049-B70861C07367}">
@@ -128,29 +115,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="sx_glass_place" ID="{2AC83189-A6C9-4B0E-B73D-3630121DF8E7}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{528585D1-DE82-432A-8853-64901F362083}" ShortID="1051313491">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sx_amb_whispers" ID="{6E19724B-5CF3-4D41-AFCE-B2A3B2482576}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{5834D6A2-0EBC-4228-A770-F278AC6B9048}" ShortID="471975465">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-												<Property Name="Volume" Type="Real64" Value="-96"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sx_amb_whispers" ID="{6E19724B-5CF3-4D41-AFCE-B2A3B2482576}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -194,6 +158,7 @@
 												<Property Name="ActionType" Type="int16" Value="12"/>
 												<Property Name="Delay" Type="Real64" Value="4"/>
 												<Property Name="FadeTime" Type="Real64" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64" Value="-96"/>
 											</PropertyList>
 											<ReferenceList>
@@ -210,31 +175,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="None" ID="{AA55CFAA-76C9-4C0A-87EF-EBF996FCA5B7}" WorkUnitID="{F4BED8A1-1DEC-43A2-BEEA-9E3CBA26C616}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{BB96C59F-4FF8-4EAB-AE58-1B84F949B8AE}" ShortID="856061089">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-												<Property Name="Scope" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sx_amb_whispers" ID="{6E19724B-5CF3-4D41-AFCE-B2A3B2482576}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{DEF4E765-AB8F-4FA2-96DF-C76744B88D19}" ShortID="287493825">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="12"/>
-												<Property Name="FadeTime" Type="Real64" Value="1"/>
-												<Property Name="Scope" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64" Value="-96"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sx_amb_whispers" ID="{6E19724B-5CF3-4D41-AFCE-B2A3B2482576}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

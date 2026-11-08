@@ -1,0 +1,32 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	584727657	MusicSystem			\Default Work Unit\MusicSystem	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MusicSystem			
+	972902454	Everything	MusicSystem			
+	1291433344	Bass	MusicSystem			
+	2798139058	Bass_Arp	MusicSystem			
+	3348164903	Bass_Arp_Chime	MusicSystem			
+	3629177121	Bass_Arp_Chime_Bell	MusicSystem			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	33300213	MX_Bus			\Default Work Unit\Master Audio Bus\MX_Bus	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SX _Bus\SFX	
+	648456911	SX _Bus			\Default Work Unit\Master Audio Bus\SX _Bus	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\SX _Bus\AMB	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\SX _Bus\UI	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	932042106	Mx_Verb			\Default Work Unit\Master Audio Bus\MX_Bus\Mx_Verb	
+	3518710954	Sfx_Verb			\Default Work Unit\Master Audio Bus\SX _Bus\SFX\Sfx_Verb	
+	4154576717	Amb_Verb			\Default Work Unit\Master Audio Bus\SX _Bus\AMB\Amb_Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	484890516	Church_Small_Wood	Wwise RoomVerb			
+	1706684651	Plate_Medium	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
