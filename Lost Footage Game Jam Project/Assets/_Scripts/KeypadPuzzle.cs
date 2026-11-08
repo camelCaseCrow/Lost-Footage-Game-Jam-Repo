@@ -14,6 +14,7 @@ public class KeypadPuzzle : MonoBehaviour
     [SerializeField] private AK.Wwise.Event keyPressSound;
     [SerializeField] private AK.Wwise.Event wrongSound;
     [SerializeField] private AK.Wwise.Event correctSound;
+    [SerializeField] private AK.Wwise.Event shardSound;          // shard #3 picked up
     [SerializeField, TextArea(2, 5)] private string[] firstLines;     // 1st time: "(You hadn't noticed it before…" … "(Didn't you?)"
     [SerializeField, TextArea(2, 5)] private string[] laterLines;     // after that: "('ENTER SQUARE FOOTAGE')"
     [SerializeField, TextArea(2, 5)] private string[] wrongLines;     // "(Nothing happens.)"
@@ -110,7 +111,7 @@ public class KeypadPuzzle : MonoBehaviour
         if (isCorrect)
         {
             correctSound.Post(keypad);
-            dialogueBox.Play(correctLines, ShowMosaic);
+            dialogueBox.PlayWithShardSound(correctLines, shardSound, ShowMosaic);
         }
         else
         {

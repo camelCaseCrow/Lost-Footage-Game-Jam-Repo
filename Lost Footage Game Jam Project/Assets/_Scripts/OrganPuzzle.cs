@@ -14,6 +14,7 @@ public class OrganPuzzle : MonoBehaviour
     [SerializeField] private AK.Wwise.Event stopPulledSound;
     [SerializeField] private AK.Wwise.Event stopPushedSound;
     [SerializeField] private AK.Wwise.Event stopsCompleteSound;   // the right pattern is set
+    [SerializeField] private AK.Wwise.Event shardSound;           // shard #2 picked up
     [SerializeField, TextArea(2, 5)] private string[] firstLines;        // 1st time: "(A massive pipe organ…" … "(…the only thing you can mess with is the stops…)"
     [SerializeField, TextArea(2, 5)] private string[] laterLines;        // after that; ends with "(Mess with the stops?)"
     [SerializeField, TextArea(2, 5)] private string[] foundPieceLines;   // "(Something shimmers by the organ pedal.)" …
@@ -182,6 +183,6 @@ public class OrganPuzzle : MonoBehaviour
     {
         CloseStops();
         stopsCompleteSound.Post(organ);
-        dialogueBox.Play(foundPieceLines, onSolved);
+        dialogueBox.PlayWithShardSound(foundPieceLines, shardSound, onSolved);
     }
 }

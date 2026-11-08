@@ -9,7 +9,6 @@ public class DialogueBox : MonoBehaviour
     [SerializeField] private TMP_Text lineText;         // the text inside the box
     [SerializeField] private PlayerInput playerInput;   // on the Player
     [SerializeField] private AK.Wwise.Event openSound;  // the box pops up
-    [SerializeField] private AK.Wwise.Event shardReceivedSound;   // every time a shard is picked up
     private const string ShardLine = "(You pick it up.)";          // the line all 3 shard scenes share
     [SerializeField] private GameObject choices;        // holds Yes and No, only shown for questions
     [SerializeField] private TMP_Text yesText;
@@ -25,6 +24,7 @@ public class DialogueBox : MonoBehaviour
     private Action onYes;            // the method to run after Yes
     private Action onNo;             // the method to run after No; null means No just closes
     private int openedOnFrame;       // the frame the box opened
+    private AK.Wwise.Event shardSound;   // this conversation's shard sound; null for normal dialogue
 
     private void Awake()
     {
@@ -35,6 +35,15 @@ public class DialogueBox : MonoBehaviour
     // Shows the lines one at a time. whenFinished runs after the last line; null means nothing happens.
     public void Play(string[] linesToShow, Action whenFinished)
     {
+        shardSound = null;   // normal dialogue has no shard
+        onFinished = whenFinished;
+        Open(linesToShow, false);
+    }
+
+    // Like Play, but plays soundOfThisShard when the "(You pick it up.)" line shows.
+    public void PlayWithShardSound(string[] linesToShow, AK.Wwise.Event soundOfThisShard, Action whenFinished)
+    {
+        shardSound = soundOfThisShard;
         onFinished = whenFinished;
         Open(linesToShow, false);
     }
@@ -43,6 +52,7 @@ public class DialogueBox : MonoBehaviour
     // whenYes runs after Yes. whenNo runs after No; null means No just closes the box.
     public void PlayThenAsk(string[] linesToShow, Action whenYes, Action whenNo)
     {
+        shardSound = null;
         onFinished = null;
         onYes = whenYes;
         onNo = whenNo;
@@ -73,9 +83,9 @@ public class DialogueBox : MonoBehaviour
     {
         lineText.text = lines[currentLine];
 
-        if (lines[currentLine] == ShardLine)
+        if (shardSound != null && lines[currentLine] == ShardLine)
         {
-            shardReceivedSound.Post(gameObject);
+            shardSound.Post(gameObject);
         }
 
         bool onLastLine = currentLine == lines.Length - 1;
