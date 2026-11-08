@@ -228,6 +228,9 @@ public static class ExamineSpotsTool
 
         SetLines(puzzle.FindProperty("solvedLines"), new[] {
             $"The room is {RoomLength} metres by {RoomWidth} metres.",
+            "(Something glints on the floor near your foot.)",
+            "(A piece of coloured glass. Weird.)",
+            "(You pick it up.)",
             "That was painless. Mostly. Okay, I'm out of here.",
             "(You hear a distinct click.)",
             "..? " });
@@ -452,7 +455,7 @@ public static class ExamineSpotsTool
             "(Something clicks inside the wall.)",
             "(A small panel beneath the keypad swings open. Another piece of coloured glass sits inside.)",
             "(You pick it up.)",
-            "(Three pieces, plus the one already in the door. That makes four.)",
+            "(That's four pieces. Four slots in the door.)",
             "(Putting the shards together, you see the completed mosaic.)" });
 
         SetLines(puzzle.FindProperty("mosaicLines"), new[] {

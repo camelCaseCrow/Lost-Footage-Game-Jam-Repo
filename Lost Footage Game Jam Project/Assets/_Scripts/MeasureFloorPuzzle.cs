@@ -10,6 +10,7 @@ public class MeasureFloorPuzzle : MonoBehaviour
     [SerializeField] private AK.Wwise.Event tapeOutSound;     // first corner: tape pulled out
     [SerializeField] private AK.Wwise.Event tapePinSound;     // each later corner: tape pinned
     [SerializeField] private AK.Wwise.Event tapeAwaySound;    // after the solved lines: tape reeled in
+    [SerializeField] private AK.Wwise.Event shardSound;       // the shard found on the floor after measuring
     [SerializeField] private DialogueBox dialogueBox;
     [SerializeField, TextArea(2, 5)] private string[] tapeOutLines;   // after the first corner
     [SerializeField, TextArea(2, 5)] private string[] solvedLines;    // after the last corner
@@ -78,7 +79,7 @@ public class MeasureFloorPuzzle : MonoBehaviour
         if (lastCorner)
         {
             active = false;
-            dialogueBox.Play(Prepend(CurrentWallLength(), solvedLines), PutTapeAway);   // "(…33 feet.)", then "Room measured!" …
+            dialogueBox.PlayWithShardSound(Prepend(CurrentWallLength(), solvedLines), shardSound, PutTapeAway);   // the width, the room size, then the shard on the floor …
         }
         else if (firstCorner)
         {

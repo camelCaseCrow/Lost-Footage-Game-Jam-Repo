@@ -8,7 +8,7 @@ public class EyePuzzle : MonoBehaviour
     [SerializeField] private GameObject rightStatue;
     [SerializeField] private AK.Wwise.Event eyeTakenSound;   // plays on the right statue when she takes its eye
     [SerializeField] private AK.Wwise.Event eyeGivenSound;   // plays on the left statue when she gives it the eye
-    [SerializeField] private AK.Wwise.Event shardSound;      // shard #1 picked up
+    [SerializeField] private AK.Wwise.Event shardSound;      // shard #2 picked up (at the left statue)
     [SerializeField, TextArea(2, 5)] private string[] takeEyeLines;    // right statue, ends with "(Reach for its eye?)"
     [SerializeField, TextArea(2, 5)] private string[] tookEyeLines;    // after Yes: "(You extend your measuring tape…" …
     [SerializeField, TextArea(2, 5)] private string[] leaveEyeLines;   // after No: "(I'd probably have to pay for damages.)"
