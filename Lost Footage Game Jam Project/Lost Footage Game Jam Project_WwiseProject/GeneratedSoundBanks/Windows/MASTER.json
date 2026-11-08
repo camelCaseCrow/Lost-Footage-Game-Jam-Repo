@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{99151FC5-00E3-420F-988E-62F6A0111084}",
     "Language": "SFX",
-    "Hash": "{A5A865EE-A6FF-4D42-31BA-8A14F87D0ADA}",
+    "Hash": "{AC2B2548-4D14-A3CD-8C5D-56D093D5FE57}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MASTER",
     "ShortName": "MASTER",
     "Path": "MASTER.bnk",
@@ -1322,9 +1322,12 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\TapeAngel",
       "GUID": "{7E17D769-29BB-4110-A734-0AE55E15FC90}",
       "DurationType": "OneShot",
-      "DurationMin": "0.8776875",
-      "DurationMax": "0.8776875",
+      "DurationMin": "2.9603124",
+      "DurationMax": "2.9603124",
       "MediaRefs": [
+       {
+        "Id": "170039359"
+       },
        {
         "Id": "666109139"
        }
@@ -1441,6 +1444,6 @@
     ]
    }
   ],
-  "FileHash": "{F3516B4A-4FA6-C1D1-9C0A-266095F19972}"
+  "FileHash": "{571AE10D-A934-284D-9AA2-F15EA9A74643}"
  }
 }
