@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa60a02e3dd114a1cba41016546baf46, type: 3}
+  m_Name: 50288114-B4C6-4E33-81ED-B1DE710F3E52
+  m_EditorClassIdentifier: 
+  objectName: playMXStinger1
+  id: 3691268467
+  guid: 50288114-B4C6-4E33-81ED-B1DE710F3E52
+  IsInUserDefinedSoundBank: 1

@@ -2314,7 +2314,7 @@ MonoBehaviour:
   tryOpenSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: acd47d13df6aa420ea306b344adff520, type: 2}
   doorOpenSound:
     idInternal: 0
     valueGuidInternal: 
@@ -3759,7 +3759,7 @@ MonoBehaviour:
   stopPulledSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 583f429431be2462ea2ccacb3c3e6809, type: 2}
   stopPushedSound:
     idInternal: 0
     valueGuidInternal: 
@@ -3771,7 +3771,7 @@ MonoBehaviour:
   shardSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 7ce779311299c4edb98a710c79d70b5d, type: 2}
   firstLines:
   - (A massive pipe organ, mostly intact. There are 8 stops, in two columns of 4,
     all marked with a purple eye.)
@@ -4926,7 +4926,7 @@ MonoBehaviour:
   eyeTakenSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a6190ef7695114058bb6e32fb9b97845, type: 2}
   eyeGivenSound:
     idInternal: 0
     valueGuidInternal: 
@@ -4934,7 +4934,7 @@ MonoBehaviour:
   shardSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a4b61d4b0826a4bbf965e09bfdac3a8a, type: 2}
   takeEyeLines:
   - (One of two massive angel statues. It only has one eye.)
   - (It's silent.)
@@ -11454,7 +11454,7 @@ MonoBehaviour:
   shardSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 7d5b1096a3ee4413aa9b9d35621c3def, type: 2}
   dialogueBox: {fileID: 1266156441}
   tapeOutLines:
   - '*You pulled out your measuring tape and latch it onto the cobblestone floor.
@@ -12202,7 +12202,7 @@ MonoBehaviour:
   endingSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d05ff8950f92d4e6ebfa46dd0dcd4d85, type: 2}
   creditsClip: {fileID: 32900000, guid: c6ed51dd233fb6d44a6eadef6d2b39bb, type: 3}
   creditsSound:
     idInternal: 0
@@ -14964,7 +14964,7 @@ MonoBehaviour:
   whisperSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: ffd8520c179ee48bd8fffbb46c27c635, type: 2}
   noiseHeardSound:
     idInternal: 0
     valueGuidInternal: 
@@ -15057,7 +15057,7 @@ MonoBehaviour:
   shardSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: ac3c84a73ed5447ae871e78d2033d572, type: 2}
   firstLines:
   - (You hadn't noticed it before, but a small keypad hangs on the wall.)
   - (Words are written above it in tiny, messy letters:)
@@ -15094,7 +15094,7 @@ MonoBehaviour:
   mosaicCompleteSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4d376368ed0fc4da9ab86818746a254e, type: 2}
   mosaicLines:
   - ...
   - (YOU NEED TO GET OUT OF HERE.)
@@ -18315,7 +18315,7 @@ MonoBehaviour:
   linesFinishedSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 3e791ddcfa6aa4dd8ac8a87c9ec8d968, type: 2}
 --- !u!1 &1840296833
 GameObject:
   m_ObjectHideFlags: 0

@@ -341,6 +341,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{E8A6EE32-81E4-4734-9147-8884765084E4}" ShortID="57609843">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sx_angel_scrape" ID="{E423B8CD-DC89-410D-8844-84A889B60998}" WorkUnitID="{2DA67D20-50C8-4EF0-87D9-0932AD6AD4F9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="OrganStop" ID="{0E28909F-D9B9-4251-83DD-9E1EA6D46F9A}">
