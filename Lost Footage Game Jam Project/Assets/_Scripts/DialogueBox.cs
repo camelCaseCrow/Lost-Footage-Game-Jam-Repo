@@ -22,6 +22,7 @@ public class DialogueBox : MonoBehaviour
     private bool yesSelected;        // which one E will pick
     private Action onYes;            // the method to run after Yes
     private Action onNo;             // the method to run after No; null means No just closes
+    private int openedOnFrame;       // the frame the box opened
 
     private void Awake()
     {
@@ -56,6 +57,7 @@ public class DialogueBox : MonoBehaviour
         lines = linesToShow;
         currentLine = 0;
         hasQuestionAtEnd = lastLineIsQuestion;
+        openedOnFrame = Time.frameCount;
 
         // The Player map holds Move and Interact, so switching away from it freezes the player.
         playerInput.SwitchCurrentActionMap("UI");
@@ -82,7 +84,9 @@ public class DialogueBox : MonoBehaviour
     // Wired to PlayerInput > Events > UI > Submit
     public void Advance(InputAction.CallbackContext context)
     {
-        if (!context.performed) return;
+        // Ignore E when the box is closed (the organ stops screen also uses the UI map),
+        // and on the frame it opened (that E press already did something else).
+        if (!context.performed || !panel.activeSelf || Time.frameCount == openedOnFrame) return;
 
         if (asking)
         {

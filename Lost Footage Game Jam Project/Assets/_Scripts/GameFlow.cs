@@ -8,10 +8,12 @@ public class GameFlow : MonoBehaviour
     [SerializeField] private WhisperTimer whisperTimer;
     [SerializeField] private FindTheSoundPuzzle findTheSoundPuzzle;
     [SerializeField] private EyePuzzle eyePuzzle;
+    [SerializeField] private OrganPuzzle organPuzzle;
     [SerializeField] private GameObject measuringSpots;    // examinable from the start until the door locks
     [SerializeField] private GameObject findSoundSpots;    // examinable while finding the sound
     [SerializeField] private GameObject takeEyeSpots;      // examinable in state 03
     [SerializeField] private GameObject giveEyeSpots;      // examinable in state 04
+    [SerializeField] private GameObject organSpots;        // examinable in state 05
 
     private void Start()
     {
@@ -19,6 +21,7 @@ public class GameFlow : MonoBehaviour
         findSoundSpots.SetActive(false);
         takeEyeSpots.SetActive(false);
         giveEyeSpots.SetActive(false);
+        organSpots.SetActive(false);
         doorCutscene.Play(StartPuzzle1);
     }
 
@@ -57,10 +60,18 @@ public class GameFlow : MonoBehaviour
         eyePuzzle.BeginGiving(StartPuzzle5);
     }
 
-    // Next state: waiting on the script.
+    // State 05: the organ stops.
     private void StartPuzzle5()
     {
         giveEyeSpots.SetActive(false);
-        Debug.Log("Eye given, glass piece found. State 05 starts here.");
+        organSpots.SetActive(true);
+        organPuzzle.Begin(StartPuzzle6);
+    }
+
+    // Next state: waiting on the script.
+    private void StartPuzzle6()
+    {
+        organSpots.SetActive(false);
+        Debug.Log("Organ solved, glass piece #2 found. State 06 starts here.");
     }
 }

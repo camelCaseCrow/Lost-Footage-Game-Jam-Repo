@@ -1,9 +1,11 @@
 using System.Reflection;
+using TMPro;
 using UnityEditor;
 using UnityEditor.Events;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 // Editor-only tool (it's in an Editor folder, so it's left out of builds).
 // Builds examine spots on top of the statues, pews and organ under "Structure Objects".
@@ -28,7 +30,7 @@ public static class ExamineSpotsTool
                             "(…No matter the angle, it seems to be looking right at you.)" },
                     false, none);
             }
-            else if (structure.name == "Marked Pew")
+            else if (IsMarkedPew(structure))
             {
                 AddExamineSpot(set, structure, new[] { "(A rotting pew. The seat is marked with a purple eye.)" }, false, none);
             }
@@ -70,7 +72,7 @@ public static class ExamineSpotsTool
                     new[] { "(One of two massive angel statues. It only has one eye.)", "(Listen closer?)" },
                     true, notHere);
             }
-            else if (structure.name == "Marked Pew")
+            else if (IsMarkedPew(structure))
             {
                 AddExamineSpot(set, structure,
                     new[] { "(A rotting pew. The seat is marked with a purple eye.)", "(Listen closer?)" },
@@ -111,7 +113,7 @@ public static class ExamineSpotsTool
             {
                 AddPuzzleSpot(set, structure, "Right Statue Spot", puzzle.ExamineRightStatue);   // take its eye
             }
-            else if (structure.name == "Marked Pew")
+            else if (IsMarkedPew(structure))
             {
                 AddExamineSpot(set, structure,
                     new[] { "(A rotting pew. The seat is marked with a purple eye.)",
@@ -155,7 +157,7 @@ public static class ExamineSpotsTool
                     new[] { "(The Blinded Angel.)", "(Its eyeless face sees right through you.)", "(Accusing.)" },
                     false, none);
             }
-            else if (structure.name == "Marked Pew")
+            else if (IsMarkedPew(structure))
             {
                 AddExamineSpot(set, structure, new[] { "(A rotting pew. The seat is marked with a purple eye.)" }, false, none);
             }
@@ -177,6 +179,329 @@ public static class ExamineSpotsTool
         FillWhisperTimer();
         FillFindTheSoundPuzzle();
         FillEyePuzzle();
+        FillOrganPuzzle();
+    }
+
+    [MenuItem("Tools/Lost Footage/Set Up Organ Puzzle")]
+    private static void SetUpOrganPuzzle()
+    {
+        if (Object.FindFirstObjectByType<OrganPuzzle>(FindObjectsInactive.Include) != null)
+        {
+            throw new System.InvalidOperationException("The organ puzzle is already set up. Ctrl + Z, or delete PuzzleFourOrgan, Stops Screen and Organ Spots' children, to rebuild.");
+        }
+
+        Undo.IncrementCurrentGroup();
+        int undoGroup = Undo.GetCurrentGroup();
+
+        GameObject set = FindOrCreateEmptySet("Organ Spots", "organSpots");
+        GameObject stopsScreen = CreateStopsScreen();
+        OrganPuzzle puzzle = CreateOrganPuzzle(stopsScreen);
+        WireOrganControls(puzzle);
+        BuildOrganSpots(set, puzzle);
+
+        Undo.CollapseUndoOperations(undoGroup);   // one Ctrl + Z undoes the whole setup
+    }
+
+    // A black panel with the stops grid text, on the same canvas as the dialogue box.
+    private static GameObject CreateStopsScreen()
+    {
+        DialogueBox dialogueBox = FindInScene<DialogueBox>();   // it sits on Text Canvas
+
+        GameObject screen = new GameObject("Stops Screen", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+        Undo.RegisterCreatedObjectUndo(screen, "Create Stops Screen");
+        screen.transform.SetParent(dialogueBox.transform, false);
+        screen.GetComponent<RectTransform>().sizeDelta = new Vector2(600, 500);   // centred by default
+        screen.GetComponent<Image>().color = Color.black;
+
+        GameObject textObject = new GameObject("Stops Text", typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI));
+        Undo.RegisterCreatedObjectUndo(textObject, "Create Stops Text");
+        textObject.transform.SetParent(screen.transform, false);
+
+        RectTransform textRect = textObject.GetComponent<RectTransform>();
+        textRect.anchorMin = Vector2.zero;            // stretch to fill the panel…
+        textRect.anchorMax = Vector2.one;
+        textRect.offsetMin = new Vector2(30, 30);     // …with a 30 margin
+        textRect.offsetMax = new Vector2(-30, -30);
+
+        // Same font as the dialogue box's text.
+        SerializedObject dialogueSlots = new SerializedObject(dialogueBox);
+        TMP_Text lineText = (TMP_Text)dialogueSlots.FindProperty("lineText").objectReferenceValue;
+
+        TextMeshProUGUI stopsText = textObject.GetComponent<TextMeshProUGUI>();
+        stopsText.font = lineText.font;
+        stopsText.fontSize = 40;
+        stopsText.color = Color.white;
+        stopsText.alignment = TextAlignmentOptions.Center;
+
+        return screen;
+    }
+
+    private static OrganPuzzle CreateOrganPuzzle(GameObject stopsScreen)
+    {
+        GameObject puzzles = GameObject.Find("Puzzles");
+        if (puzzles == null)
+        {
+            throw new System.InvalidOperationException("No 'Puzzles' group in the open scene.");
+        }
+
+        GameObject puzzleObject = new GameObject("PuzzleFourOrgan");
+        Undo.RegisterCreatedObjectUndo(puzzleObject, "Create PuzzleFourOrgan");
+        puzzleObject.transform.SetParent(puzzles.transform, false);
+        OrganPuzzle puzzle = puzzleObject.AddComponent<OrganPuzzle>();
+
+        SerializedObject puzzleSlots = new SerializedObject(puzzle);
+        puzzleSlots.FindProperty("stopsScreen").objectReferenceValue = stopsScreen;
+        puzzleSlots.FindProperty("stopsText").objectReferenceValue = stopsScreen.transform.Find("Stops Text").GetComponent<TMP_Text>();
+        puzzleSlots.ApplyModifiedProperties();
+
+        FillOrganPuzzle();   // dialogue box, player input, organ and the lines
+
+        SerializedObject gameFlowSlots = new SerializedObject(FindInScene<GameFlow>());
+        gameFlowSlots.FindProperty("organPuzzle").objectReferenceValue = puzzle;
+        gameFlowSlots.ApplyModifiedProperties();
+
+        return puzzle;
+    }
+
+    // Same as clicking + under Player Input > Events > UI and picking the OrganPuzzle method.
+    private static void WireOrganControls(OrganPuzzle puzzle)
+    {
+        PlayerInput playerInput = FindInScene<PlayerInput>();
+        Undo.RecordObject(playerInput, "Wire organ controls");
+
+        WireUIAction(playerInput, "Navigate", puzzle.Navigate);
+        WireUIAction(playerInput, "Submit", puzzle.PullOrPush);
+        WireUIAction(playerInput, "Cancel", puzzle.StepAway);
+
+        EditorUtility.SetDirty(playerInput);
+    }
+
+    private static void WireUIAction(PlayerInput playerInput, string actionName, UnityAction<InputAction.CallbackContext> method)
+    {
+        InputAction action = playerInput.actions.FindAction("UI/" + actionName, true);
+
+        foreach (PlayerInput.ActionEvent actionEvent in playerInput.actionEvents)
+        {
+            if (actionEvent.actionId == action.id.ToString())
+            {
+                UnityEventTools.AddPersistentListener(actionEvent, method);
+                return;
+            }
+        }
+
+        throw new System.InvalidOperationException($"Player Input has no event for UI/{actionName}.");
+    }
+
+    private static void BuildOrganSpots(GameObject set, OrganPuzzle puzzle)
+    {
+        Transform leftStatue = LeftMostStatue();
+        string[] none = new string[0];
+
+        foreach (Transform structure in StructureObjects())
+        {
+            string kind = KindOf(structure);
+
+            if (structure == leftStatue)
+            {
+                AddExamineSpot(set, structure, new[] { "(The Sighted Angel.)", "('Praise He who is watching'.)" }, false, none);
+            }
+            else if (kind == "statue")
+            {
+                AddExamineSpot(set, structure, new[] { "(The Blinded Angel.)" }, false, none);
+            }
+            else if (IsMarkedPew(structure))
+            {
+                AddExamineSpot(set, structure,
+                    new[] { "(A rotting pew. The seat is marked with a purple eye.)", PewPositionLine(structure) },
+                    false, none);
+            }
+            else if (kind == "pewpew")
+            {
+                AddExamineSpot(set, structure, new[] { "(A rotting pew.)" }, false, none);
+            }
+            else if (kind == "organ")
+            {
+                AddPuzzleSpot(set, structure, "Organ Spot", puzzle.ExamineOrgan);
+            }
+        }
+    }
+
+    private static void FillOrganPuzzle()
+    {
+        SerializedObject puzzle = new SerializedObject(FindInScene<OrganPuzzle>());
+
+        puzzle.FindProperty("dialogueBox").objectReferenceValue = FindInScene<DialogueBox>();
+        puzzle.FindProperty("playerInput").objectReferenceValue = FindInScene<PlayerInput>();
+        puzzle.FindProperty("organ").objectReferenceValue = Organ().gameObject;
+
+        SetLines(puzzle.FindProperty("firstLines"), new[] {
+            "(A massive pipe organ, mostly intact. There are 8 stops, in two columns of 4, all marked with a purple eye.)",
+            "Please don't tell me I need to make the organ work…",
+            "I've never touched an organ in my life!",
+            "(You look back at the Sighted Angel. It offers no further guidance.)",
+            "(If the keys don't work, the only thing you can mess with is the stops…)" });
+
+        SetLines(puzzle.FindProperty("laterLines"), new[] {
+            "(A massive pipe organ, mostly intact. There are 8 stops, in two columns of 4, all marked with a purple eye.)",
+            "(Mess with the stops?)" });
+
+        SetLines(puzzle.FindProperty("foundPieceLines"), new[] {
+            "(Something shimmers by the organ pedal.)",
+            "(You hadn't noticed it before, but a piece of coloured glass sits at the base of the instrument.)",
+            "(You pick it up.)" });
+
+        // Correct Stops: first 4 = left column, last 4 = right column, top to bottom (OrganPuzzle's order).
+        SerializedProperty correctStops = puzzle.FindProperty("correctStops");
+        correctStops.arraySize = 8;
+        for (int row = 0; row < 4; row++)
+        {
+            correctStops.GetArrayElementAtIndex(row).boolValue = MarkedLeftColumn[row];
+            correctStops.GetArrayElementAtIndex(4 + row).boolValue = MarkedRightColumn[row];
+        }
+
+        puzzle.ApplyModifiedProperties();
+    }
+
+    // The organ answer. The pews sit like the stops: 2 columns × 4 rows, row 1 nearest the organ.
+    // A marked pew = a stop that must be pulled out.
+    private static readonly bool[] MarkedLeftColumn  = { false, true,  true,  false };
+    private static readonly bool[] MarkedRightColumn = { true,  false, false, true  };
+
+    private static bool IsMarkedPew(Transform structure)
+    {
+        if (KindOf(structure) != "pewpew") return false;
+
+        int row = PewRow(structure);
+        if (PewIsOnLeft(structure))
+        {
+            return MarkedLeftColumn[row];
+        }
+        return MarkedRightColumn[row];
+    }
+
+    // True if the pew is left of the middle of all the pews.
+    private static bool PewIsOnLeft(Transform pew)
+    {
+        float totalX = 0f;
+        int pewCount = 0;
+
+        foreach (Transform structure in StructureObjects())
+        {
+            if (KindOf(structure) == "pewpew")
+            {
+                totalX += structure.position.x;
+                pewCount++;
+            }
+        }
+
+        float middleX = totalX / pewCount;
+        return pew.position.x < middleX;
+    }
+
+    // 0 = the row nearest the organ, 3 = the back row.
+    private static int PewRow(Transform pew)
+    {
+        bool onLeft = PewIsOnLeft(pew);
+        int row = 0;
+
+        foreach (Transform structure in StructureObjects())
+        {
+            bool isPewInSameColumn = KindOf(structure) == "pewpew" && PewIsOnLeft(structure) == onLeft;
+            if (isPewInSameColumn && structure.position.y > pew.position.y)
+            {
+                row++;   // another pew in this column is nearer the organ
+            }
+        }
+
+        if (row > 3)
+        {
+            throw new System.InvalidOperationException($"Pew '{pew.name}' is in row {row + 1}; the organ puzzle expects 4 rows of pews.");
+        }
+        return row;
+    }
+
+    // e.g. "(Third row from the organ, left side.)"
+    private static string PewPositionLine(Transform pew)
+    {
+        string[] rowNames = { "First", "Second", "Third", "Fourth" };
+
+        string side = "right";
+        if (PewIsOnLeft(pew))
+        {
+            side = "left";
+        }
+
+        return $"({rowNames[PewRow(pew)]} row from the organ, {side} side.)";
+    }
+
+    [MenuItem("Tools/Lost Footage/Create Organ Spots")]
+    private static void CreateOrganSpots()
+    {
+        GameObject set = FindOrCreateEmptySet("Organ Spots", "organSpots");
+        BuildOrganSpots(set, FindInScene<OrganPuzzle>());
+    }
+
+    [MenuItem("Tools/Lost Footage/Rebuild All Spots")]
+    private static void RebuildAllSpots()
+    {
+        Undo.IncrementCurrentGroup();
+        int undoGroup = Undo.GetCurrentGroup();
+
+        EmptySet("Measuring Spots");
+        EmptySet("Find Sound Spots");
+        EmptySet("Take Eye Spots");
+        EmptySet("Give Eye Spots");
+        EmptySet("Organ Spots");
+
+        CreateMeasuringSpots();
+        CreateFindSoundSpots();
+        CreateTakeEyeSpots();
+        CreateGiveEyeSpots();
+        CreateOrganSpots();
+
+        Undo.CollapseUndoOperations(undoGroup);   // one Ctrl + Z restores the old spots
+    }
+
+    // Deletes every spot inside the set except its "Hand-made" group, which survives rebuilds.
+    // The set itself stays, so GameFlow keeps its slot.
+    private static void EmptySet(string setName)
+    {
+        GameObject set = GameObject.Find(setName);
+        if (set == null)
+        {
+            throw new System.InvalidOperationException($"No '{setName}' in the open scene.");
+        }
+
+        // Backwards, because deleting a child shifts the ones after it.
+        for (int i = set.transform.childCount - 1; i >= 0; i--)
+        {
+            GameObject child = set.transform.GetChild(i).gameObject;
+            if (child.name == "Hand-made") continue;
+            Undo.DestroyObjectImmediate(child);
+        }
+    }
+
+    // True if the set holds anything besides its "Hand-made" group.
+    private static bool HasToolSpots(GameObject set)
+    {
+        foreach (Transform child in set.transform)
+        {
+            if (child.name != "Hand-made") return true;
+        }
+        return false;
+    }
+
+    private static Transform Organ()
+    {
+        foreach (Transform structure in StructureObjects())
+        {
+            if (KindOf(structure) == "organ")
+            {
+                return structure;
+            }
+        }
+
+        throw new System.InvalidOperationException("No organ under Structure Objects.");
     }
 
     private static void FillEyePuzzle()
@@ -376,9 +701,9 @@ public static class ExamineSpotsTool
             set = new GameObject(setName);
             Undo.RegisterCreatedObjectUndo(set, "Create " + setName);
         }
-        else if (set.transform.childCount > 0)
+        else if (HasToolSpots(set))
         {
-            throw new System.InvalidOperationException($"'{setName}' already has spots in it. Delete them first to rebuild.");
+            throw new System.InvalidOperationException($"'{setName}' already has spots in it. Use Rebuild All Spots, or delete them first.");
         }
 
         SerializedObject gameFlowSlots = new SerializedObject(FindInScene<GameFlow>());
