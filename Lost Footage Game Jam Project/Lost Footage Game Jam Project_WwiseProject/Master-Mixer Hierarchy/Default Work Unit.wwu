@@ -12,12 +12,72 @@
 					<ChildrenList>
 						<Bus Name="SX _Bus" ID="{752331BA-3C26-49CF-BF56-9FE7AA3D8E63}">
 							<ChildrenList>
-								<Bus Name="SFX" ID="{B5A0BBB6-0271-44DB-A2D4-4D7C8646D4CE}"/>
+								<Bus Name="SFX" ID="{B5A0BBB6-0271-44DB-A2D4-4D7C8646D4CE}">
+									<ChildrenList>
+										<AuxBus Name="Sfx_Verb" ID="{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}">
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{5C8AF155-B1DA-417B-AF3A-F6A933ECC983}" ShortID="335045066">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																		<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
 								<Bus Name="UI" ID="{F43C25D7-E22E-4C2A-BC03-018263F4E311}"/>
-								<Bus Name="AMB" ID="{E847BF43-9974-4A39-ADDC-05678D194162}"/>
+								<Bus Name="AMB" ID="{E847BF43-9974-4A39-ADDC-05678D194162}">
+									<ChildrenList>
+										<AuxBus Name="Amb_Verb" ID="{5A41F921-A604-465E-87C6-AFB78EFD7350}">
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{F59EA8C1-FB42-4932-B268-655D9C234699}" ShortID="381451313">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																		<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
-						<Bus Name="MX_Bus" ID="{4122C1C1-5E38-4F3B-9905-98D2E25D5CBE}"/>
+						<Bus Name="MX_Bus" ID="{4122C1C1-5E38-4F3B-9905-98D2E25D5CBE}">
+							<ChildrenList>
+								<AuxBus Name="Mx_Verb" ID="{77EE4C89-2E77-41B4-9362-68ED6B3CBBAB}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{0836BAE5-51E0-4999-9742-80821BB24D77}" ShortID="902500330">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Plate_Medium" ID="{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

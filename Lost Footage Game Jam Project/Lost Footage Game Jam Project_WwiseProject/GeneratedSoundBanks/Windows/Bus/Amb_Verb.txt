@@ -1,0 +1,6 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	4154576717	Amb_Verb			\Default Work Unit\Master Audio Bus\SX _Bus\AMB\Amb_Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	484890516	Church_Small_Wood	Wwise RoomVerb			
+

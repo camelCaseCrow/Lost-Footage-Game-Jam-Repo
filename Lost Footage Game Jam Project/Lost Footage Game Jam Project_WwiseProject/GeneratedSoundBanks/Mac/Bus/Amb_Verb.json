@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4154576717",
+    "Type": "Bus",
+    "GUID": "{5A41F921-A604-465E-87C6-AFB78EFD7350}",
+    "Language": "SFX",
+    "Hash": "{AD311B92-CD43-B57F-BD1F-00A791E84DBA}",
+    "ObjectPath": "Amb_Verb",
+    "ShortName": "Amb_Verb",
+    "Path": "Bus/Amb_Verb.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "484890516",
+       "Name": "Church_Small_Wood",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Cathedrals\\Church_Small_Wood",
+       "GUID": "{940CCB47-F031-4C6A-B0E6-726CAC418C02}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "4154576717",
+      "Name": "Amb_Verb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\AMB\\Amb_Verb",
+      "GUID": "{5A41F921-A604-465E-87C6-AFB78EFD7350}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "484890516"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BDA67581-94F6-1298-A160-3B5F3687D523}"
+ }
+}

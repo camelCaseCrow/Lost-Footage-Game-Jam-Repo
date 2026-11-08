@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{99151FC5-00E3-420F-988E-62F6A0111084}",
     "Language": "SFX",
-    "Hash": "{27A2252C-794F-566B-BA6C-5753DDB59865}",
+    "Hash": "{F2BC4139-3DBF-0385-7603-8CC467334193}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MASTER",
     "ShortName": "MASTER",
     "Path": "MASTER.bnk",
@@ -96,6 +96,14 @@
       "CachePath": "07/{07D0FB10-75FC-E04E-CECA-9C14FC2A49CB}.wem"
      },
      {
+      "Id": "118062420",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_introwalkin_layer_piano.wav",
+      "CachePath": "61/{6101CE25-5736-9BFE-D0C0-9CE42CA89377}.wem"
+     },
+     {
       "Id": "121928158",
       "Language": "SFX",
       "Streaming": "false",
@@ -134,6 +142,14 @@
       "Location": "Memory",
       "ShortName": "sx_amb_spot_whispers_3.wav",
       "CachePath": "7E/{7E7106A0-F577-853E-B3DA-297ACA932BEB}.wem"
+     },
+     {
+      "Id": "213352208",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_mainTheme_layer_arpeggios.wav",
+      "CachePath": "D7/{D7F7704F-21CF-4D31-81D5-F9CBD62F257E}.wem"
      },
      {
       "Id": "224951204",
@@ -256,6 +272,14 @@
       "CachePath": "76/{76E85264-855A-C922-A3CE-8EEC4B036BC7}.wem"
      },
      {
+      "Id": "411712288",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_mainTheme_layer_chime.wav",
+      "CachePath": "97/{9791C48D-1A7A-025F-B80A-794107A7362F}.wem"
+     },
+     {
       "Id": "415559019",
       "Language": "SFX",
       "Streaming": "false",
@@ -368,12 +392,28 @@
       "CachePath": "C6/{C68DBDAB-FFF4-BEB1-509B-5A02E2ADD4F7}.wem"
      },
      {
+      "Id": "686870671",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_mainTheme_layer_bassline.wav",
+      "CachePath": "99/{9921B76E-6D42-A7AA-82C1-7D2484094542}.wem"
+     },
+     {
       "Id": "718605365",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sx_organ_stop_1.wav",
       "CachePath": "DF/{DF18DA4C-8D86-00B9-BFFF-D272455BD2BC}.wem"
+     },
+     {
+      "Id": "759252653",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_mainTheme_layer_chimbell.wav",
+      "CachePath": "0D/{0D7723DE-1123-10C0-338C-4C642CEF022F}.wem"
      },
      {
       "Id": "767904568",
@@ -422,6 +462,14 @@
       "Location": "Memory",
       "ShortName": "sx_angel_turn.wav",
       "CachePath": "FF/{FFC95925-5B4C-A10D-5382-40509E8F9D48}.wem"
+     },
+     {
+      "Id": "811566406",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_intro_layer_synthchord.wav",
+      "CachePath": "C6/{C60AA75A-83C2-FCCF-619A-36B9212350C8}.wem"
      },
      {
       "Id": "812313114",
@@ -504,6 +552,14 @@
       "CachePath": "F1/{F12E3E4A-7F2C-D1D8-B5F2-612D7099A51B}.wem"
      },
      {
+      "Id": "940548725",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mx_mainTheme_layer_synthchord.wav",
+      "CachePath": "62/{6278D06B-6A04-D5C5-2A53-A7B54E8CAAB0}.wem"
+     },
+     {
       "Id": "944566249",
       "Language": "SFX",
       "Streaming": "false",
@@ -578,6 +634,16 @@
     ],
     "Events": [
      {
+      "Id": "2748258315",
+      "Name": "AngelClunk",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\AngelClunk",
+      "GUID": "{21F08F14-F580-4D35-BE43-90243C19EC41}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "3364115928",
       "Name": "AngelScrape",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\AngelScrape",
@@ -588,6 +654,14 @@
       "MediaRefs": [
        {
         "Id": "170039359"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
        }
       ]
      },
@@ -603,6 +677,14 @@
        {
         "Id": "800775824"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      },
      {
@@ -617,6 +699,14 @@
        {
         "Id": "404350391"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      },
      {
@@ -630,6 +720,14 @@
       "MediaRefs": [
        {
         "Id": "445714166"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
        }
       ]
      },
@@ -654,6 +752,14 @@
        {
         "Id": "886001198"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      },
      {
@@ -677,6 +783,14 @@
        {
         "Id": "686262234"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      },
      {
@@ -690,6 +804,14 @@
       "MediaRefs": [
        {
         "Id": "1036760195"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
        }
       ]
      },
@@ -705,6 +827,14 @@
        {
         "Id": "149967102"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      },
      {
@@ -718,6 +848,14 @@
       "MediaRefs": [
        {
         "Id": "74642959"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
        }
       ]
      },
@@ -733,6 +871,14 @@
        {
         "Id": "767904568"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      },
      {
@@ -746,6 +892,14 @@
       "MediaRefs": [
        {
         "Id": "1011077322"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
        }
       ]
      },
@@ -761,6 +915,14 @@
        {
         "Id": "790346723"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      },
      {
@@ -775,6 +937,14 @@
        {
         "Id": "992469405"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      },
      {
@@ -788,6 +958,14 @@
       "MediaRefs": [
        {
         "Id": "67309141"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
        }
       ]
      },
@@ -811,6 +989,14 @@
        },
        {
         "Id": "944566249"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
        }
       ]
      },
@@ -926,6 +1112,14 @@
        {
         "Id": "1039221686"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "4154576717",
+        "Name": "Amb_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\AMB\\Amb_Verb",
+        "GUID": "{5A41F921-A604-465E-87C6-AFB78EFD7350}"
+       }
       ]
      },
      {
@@ -961,20 +1155,47 @@
       "Name": "playMainMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMainMusic",
       "GUID": "{4D43261E-D119-4647-83BB-C846220B94F4}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "213352208"
+       },
+       {
+        "Id": "411712288"
+       },
+       {
+        "Id": "686870671"
+       },
+       {
+        "Id": "759252653"
+       },
+       {
+        "Id": "940548725"
+       }
+      ]
      },
      {
       "Id": "413545259",
       "Name": "playMenuMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\MUSIC\\playMenuMusic",
       "GUID": "{CE295E88-C687-4E02-A7F0-F6EDD20A7963}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "118062420"
+       },
+       {
+        "Id": "811566406"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "932042106",
+        "Name": "Mx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MX_Bus\\Mx_Verb",
+        "GUID": "{77EE4C89-2E77-41B4-9362-68ED6B3CBBAB}"
+       }
+      ]
      },
      {
       "Id": "2855001309",
@@ -1020,6 +1241,26 @@
       ]
      },
      {
+      "Id": "4273968882",
+      "Name": "playText",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\UI\\playText",
+      "GUID": "{C4690F1B-435F-4D97-8F03-510063D0EA34}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "679634934",
+      "Name": "playWhispers",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Ambience\\playWhispers",
+      "GUID": "{19546513-0506-483E-ADA6-9FC484C99F51}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "2695946112",
       "Name": "TapeAngel",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\MainSFX\\TapeAngel",
@@ -1030,6 +1271,14 @@
       "MediaRefs": [
        {
         "Id": "666109139"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
        }
       ]
      },
@@ -1045,11 +1294,19 @@
        {
         "Id": "233065932"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3518710954",
+        "Name": "Sfx_Verb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SX _Bus\\SFX\\Sfx_Verb",
+        "GUID": "{C36FA6A6-78B7-48A2-B5D3-A30B7453C455}"
+       }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{4FB5AF26-AB98-21CC-C19B-150B872A905A}"
+  "FileHash": "{E31CE294-9A36-7FEA-AC60-D4CAFFBC6F5F}"
  }
 }
