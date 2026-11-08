@@ -107,3 +107,7 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Wwise Picker cache: rebuilt by Wwise from the .wwu files, differs per machine (Mac / vs Windows \ paths)
+/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
+/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta
